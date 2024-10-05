@@ -19,7 +19,6 @@ const container = document.getElementById('menu-links');
 
       const User = `
         <div id="content">
-        
           <h2>Quản lí người dùng</h2>
             <p>Thông tin quản lí người dùng sẽ hiển thị ở đây.</p>
         </div>
