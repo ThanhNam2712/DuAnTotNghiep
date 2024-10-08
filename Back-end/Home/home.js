@@ -3,15 +3,6 @@ import { renderProducts } from "../Admin-Sanpham/sanpham.js";
 import { renderCategorys } from "../Admin-danhmuc/danhmuc.js";
 
 const links = [
-<<<<<<< HEAD
-  { text: 'Thống kê doanh thu', href: '#' },
-  { text: 'Quản lí người dùng', href: '#' },
-  { text: 'Quản lí sản phẩm', href: '#' },
-  { text: 'Danh mục', href: '#' },
-  { text: 'Quản lí đơn hàng', href: '#' },
-  { text: 'Quản lí bình luận', href: '#' },
-  { text: 'Quản lí Shipper', href: '#' }
-=======
   { text: "Thống kê doanh thu", href: "thongke" },
   { text: "Quản lí người dùng", href: "#" },
   { text: "Quản lí sản phẩm", href: "products" },
@@ -19,7 +10,6 @@ const links = [
   { text: "Quản lí đơn hàng", href: "manager" },
   { text: "Quản lí bình luận", href: "comment" },
   { text: "Quản lí Shipper", href: "shipper" },
->>>>>>> 92c8856cbc1554474ac88df239fb55596ce4c868
 ];
 
 const container = document.getElementById("menu-links");
@@ -30,11 +20,8 @@ const thongke = `
         </div>
       `;
 
-<<<<<<< HEAD
-      const products = `
-=======
+
 const products = `
->>>>>>> 92c8856cbc1554474ac88df239fb55596ce4c868
         <div id="content">
           <h2>Quản lí sản phẩm</h2>
         </div>
@@ -68,13 +55,9 @@ const shipper = `
 links.forEach((link) => {
   const anchor = document.createElement("a");
   anchor.textContent = link.text;
-<<<<<<< HEAD
-  anchor.href = link.href || '#';
-  
-=======
+
   anchor.href = link.href || "#";
 
->>>>>>> 92c8856cbc1554474ac88df239fb55596ce4c868
   if (link.text === "Quản lí người dùng") {
     anchor.addEventListener("click", function (event) {
       event.preventDefault();
@@ -88,12 +71,7 @@ links.forEach((link) => {
           console.error("Error loading user management HTML:", error);
         });
     });
-<<<<<<< HEAD
-      } else if (link.text === 'Quản lí sản phẩm') {
-        anchor.addEventListener('click', function(event) {
-          event.preventDefault();
-          document.getElementById('dynamic-content').innerHTML = products;
-=======
+
   } else if (link.text === "Quản lí sản phẩm") {
     anchor.addEventListener("click", function (event) {
       event.preventDefault();
@@ -105,7 +83,6 @@ links.forEach((link) => {
         })
         .catch((error) => {
           console.error("Error loading user management HTML:", error);
->>>>>>> 92c8856cbc1554474ac88df239fb55596ce4c868
         });
     });
   } else if (link.text === "Danh mục") {
