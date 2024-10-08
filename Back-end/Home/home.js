@@ -1,11 +1,11 @@
 const links = [
-  { text: 'Thống kê doanh thu', href: 'thongke' },
-  { text: 'Quản lí người dùng', href: 'User' },
-  { text: 'Quản lí sản phẩm', href: 'products' },
-  { text: 'Danh mục', href: 'category' },
-  { text: 'Quản lí đơn hàng', href: 'manager' },
-  { text: 'Quản lí bình luận', href: 'comment' },
-  { text: 'Quản lí Shipper', href: 'shipper' }
+  { text: 'Thống kê doanh thu', href: '#' },
+  { text: 'Quản lí người dùng', href: '#' },
+  { text: 'Quản lí sản phẩm', href: '#' },
+  { text: 'Danh mục', href: '#' },
+  { text: 'Quản lí đơn hàng', href: '#' },
+  { text: 'Quản lí bình luận', href: '#' },
+  { text: 'Quản lí Shipper', href: '#' }
 ];
 
 const container = document.getElementById('menu-links');
@@ -14,13 +14,6 @@ const container = document.getElementById('menu-links');
       const thongke = `
         <div id="content">
           <h2>Thống kê doanh thu</h2>
-        </div>
-      `;
-
-      const User = `
-        <div id="content">
-          <h2>Quản lí người dùng</h2>
-            <p>Thông tin quản lí người dùng sẽ hiển thị ở đây.</p>
         </div>
       `;
 
@@ -59,12 +52,20 @@ links.forEach(link => {
   const anchor = document.createElement('a');
   anchor.textContent = link.text;
   anchor.href = link.href || '#';
-      
-      if (link.text === 'Quản lí người dùng') {
-        anchor.addEventListener('click', function(event) {
-          event.preventDefault();
-          document.getElementById('dynamic-content').innerHTML = User;
+  
+  if (link.text === "Quản lí người dùng") {
+    anchor.addEventListener("click", function (event) {
+      event.preventDefault();
+      fetch("../Admin-User/User.html") // Đường dẫn đến User.html
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("dynamic-content").innerHTML = html;
+          renderUsers(); // Gọi hàm renderUsers từ User.js để hiển thị dữ liệu
+        })
+        .catch((error) => {
+          console.error("Error loading user management HTML:", error);
         });
+    });
       } else if (link.text === 'Quản lí sản phẩm') {
         anchor.addEventListener('click', function(event) {
           event.preventDefault();
