@@ -125,7 +125,6 @@ nav ul li a:hover {
   height: 24px; /* Kích thước cho các biểu tượng */
   transition: transform 0.3s; /* Thêm hiệu ứng chuyển tiếp khi hover */
 }
-
 .header-icons img:hover {
   transform: scale(1.1); /* Tăng kích thước biểu tượng khi hover */
 }
