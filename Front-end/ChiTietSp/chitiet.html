@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AE Boutique</title>
+    <link rel="stylesheet" href="chitit.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation Bar -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="../Ảnh/logo.png" alt="" />
+
+          <a href="#">AE Boutique</a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Cửa hàng</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <a href="#" class="icon user-icon"><i class="fas fa-user"></i></a>
+          <a href="#" class="icon search-icon"><i class="fas fa-search"></i></a>
+          <a href="#" class="icon heart-icon"><i class="fas fa-heart"></i></a>
+          <a href="#" class="icon cart-icon"
+            ><i class="fas fa-shopping-cart"></i
+          ></a>
+        </div>
+      </div>
+      <nav class="breadcrumb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Asgaard sofa</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Product Section -->
+    <section class="product">
+      <div class="container">
+        <div class="main-content">
+          <!-- Hình ảnh sản phẩm và các lựa chọn thumbnail -->
+          <div class="product-image-section">
+            <div class="product-thumbnails">
+              <img
+                src="../Ảnh/phông/z5656716018630_a4de478b1438777a35c47eaa4cd16c34-300x400.jpg"
+                alt="Sofa 1"
+                class="thumbnail"
+                onclick="changeImage('sofa1.jpg')"
+              />
+              <img
+                src="../Ảnh/phông/z5656716318619_e9d8d08f414dfeee02d1327cbb917f5e-150x200.jpg"
+                alt="Sofa 2"
+                class="thumbnail"
+                onclick="changeImage('sofa2.jpg')"
+              />
+              <img
+                src="../Ảnh/phông/z5656718891901_29309ef55a4ae5ea792ab9958adf3d75-300x400.jpg"
+                alt="Sofa 3"
+                class="thumbnail"
+                onclick="changeImage('sofa3.jpg')"
+              />
+              <img
+                src="../Ảnh/phông/z5656719052450_d00261e2f5eb5acb72d5e8152c938172-150x200.jpg"
+                alt="Sofa 4"
+                class="thumbnail"
+                onclick="changeImage('sofa4.jpg')"
+              />
+            </div>
+            <div class="product-main-image">
+              <img
+                src="../Ảnh/phông/z5658081308673_a0f3018761202d2211712cde56ef3f88-300x400.jpg"
+                id="main-product-image"
+                alt="Main Sofa"
+              />
+            </div>
+          </div>
+
+          <div class="product-info">
+            <h1>Asgaard sofa</h1>
+            <div class="price">25.000.000đ</div>
+            <p>
+              Setting the bar as one of the loudest speakers in its class, the
+              Kilburn is a compact, stout-hearted hero with a well-balanced
+              audio which boasts a clear midrange and extended highs for a
+              sound.
+            </p>
+            <br />
+            <!-- Chọn kích thước và màu sắc -->
+            <div class="product-options">
+              <div class="size-options">
+                <label>Size:</label>
+                <button class="size-option" onclick="selectSize('L')">L</button>
+                <button class="size-option" onclick="selectSize('XL')">
+                  XL
+                </button>
+                <button class="size-option" onclick="selectSize('XS')">
+                  XS
+                </button>
+              </div>
+              <br />
+
+              <div class="color-options">
+                <label>Color:</label>
+                <button
+                  class="color-option black"
+                  onclick="selectColor('Black')"
+                ></button>
+                <button
+                  class="color-option purple"
+                  onclick="selectColor('Purple')"
+                ></button>
+                <button
+                  class="color-option gold"
+                  onclick="selectColor('Gold')"
+                ></button>
+              </div>
+            </div>
+            <div class="product-actions">
+              <label>Số Lượng:</label>
+              <div class="quantity-input">
+                <button class="minus-btn">-</button>
+                <input type="text" value="1" min="1" id="quantity" />
+                <button class="plus-btn">+</button>
+              </div>
+
+              <div class="button-group">
+                <button id="buy-now">
+                  <i class="fas fa-shopping-cart"></i> Mua hàng
+                </button>
+                <button id="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Thêm giỏ hàng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Description Section -->
+    <div class="product-middle">
+      <!-- Tab Menu -->
+      <div class="tabs">
+        <ul>
+          <li class="active">Description</li>
+          <li>Additional Information</li>
+          <li>Reviews [5]</li>
+        </ul>
+      </div>
+
+      <!-- Description Section -->
+      <div class="description">
+        <p>
+          Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn
+          portable active stereo speaker takes the unmistakable look and sound
+          of Marshall, unplugs the chords, and takes the show on the road.
+        </p>
+        <p>
+          Weighing in under 7 pounds, the Kilburn is a lightweight piece of
+          vintage styled engineering. Setting the bar as one of the loudest
+          speakers in its class, the Kilburn is a compact, stout-hearted hero
+          with a well-balanced audio which boasts a clear midrange and extended
+          highs for a sound that is both articulate and pronounced. The analogue
+          knobs allow you to fine tune the controls to your personal preferences
+          while the guitar-influenced leather strap enables easy and stylish
+          travel.
+        </p>
+      </div>
+
+      <!-- Product Images (in a row) -->
+      <div class="product-images">
+        <img
+          src="../Ảnh/quần áo bộ/z5452633920757_024_2abab9e319ba36465419d02e3e738751-150x200.jpg"
+          alt="Product 1"
+        />
+        <img
+          src="../Ảnh/quần áo bộ/z5452633920757_025_bd1dbc2c8264b72cdae7a2f40c751ca6-300x400.jpg"
+          alt="Product 2"
+        />
+        <img
+          src="../Ảnh/quần áo bộ/z5452633920757_026_5bfc6c757bdfd9fbf43d399aea306a4a-150x200.jpg"
+          alt="Product 3"
+        />
+        <img
+          src="../Ảnh/quần áo bộ/z5452633920757_027_bc20818e157db12e7abe6d1b5f49983a-300x400.jpg"
+          alt="Product 4"
+        />
+      </div>
+    </div>
+
+    <!-- Related Products Section -->
+    <section class="related-products">
+      <h1 class="related-products-title">Related Products</h1>
+      <br />
+      <div class="product-list">
+        <div class="product-item">
+          <img
+            src="../Ảnh/Polo/z5434312046622_71e874b81daf1b56873c1ca0c7e58c19-300x400.jpg"
+            alt="Sytherine"
+          />
+          <h3>Sytherine</h3>
+          <p>Stylish cafe chair</p>
+          <p class="price">
+            2.500.000đ <span class="original-price">3.500.000đ</span>
+          </p>
+          <span class="discount">-30%</span>
+        </div>
+        <div class="product-item">
+          <img
+            src="../Ảnh/Polo/z5434312049733_e6fc86fa2491095f576831e36b076b57-150x200.jpg"
+            alt="Leviosa"
+          />
+          <h3>Leviosa</h3>
+          <p>Stylish cafe chair</p>
+          <p class="price">2.500.000đ</p>
+        </div>
+        <div class="product-item">
+          <img
+            src="../Ảnh/Polo/z5434312056288_94e456183d497c09ffb8df5f422858aa-300x400.jpg"
+            alt="Lolito"
+          />
+          <h3>Lolito</h3>
+          <p>Luxury big sofa</p>
+          <p class="price">
+            7.000.000đ <span class="original-price">14.000.000đ</span>
+          </p>
+          <span class="discount">-50%</span>
+        </div>
+        <div class="product-item">
+          <img
+            src="../Ảnh/Polo/z5434312061948_09bd26b62e90fa49cff8c429865ef4bb-150x200.jpg"
+            alt="Respira"
+          />
+          <h3>Respira</h3>
+          <p>Outdoor bar table and stool</p>
+          <p class="price">5.000.000đ</p>
+          <span class="new">New</span>
+        </div>
+      </div>
+      <button id="loadMore">Show More</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2024 AE Boutique, All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="chitiet.js"></script>
+  </body>
+</html>
