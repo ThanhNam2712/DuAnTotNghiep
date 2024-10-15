@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AE Boutique</title>
-    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="lienhe.css" />
+    <title>Liên hệ</title>
   </head>
   <body>
-    <!-- Header -->
     <header>
   <div class="logo">
     <img src="ảnh/logo.png" alt="Logo AE Boutique" />
@@ -34,7 +33,6 @@
     <a href="#"><img src="ảnh/cart.jpg" alt="Cart" /></a>
   </div>
 </header>
-
 
     <!-- Main Banner -->
     <section class="banner">
@@ -75,86 +73,49 @@
         <button class="next" onclick="changeSlide(1)">&#10095;</button>
       </div>
     </section>
+    <h1>Trang liên hệ</h1>
 
-    <!-- New Products Section -->
-    <section class="new-products">
-      <h3>Sản Phẩm Mới</h3>
-      <hr>
-      <div class="product-grid">
-        <div class="product">
-          <img src="ảnh/1.1.jpg" alt="Áo Adidas" />
-          <h4>Áo Adidas</h4>
-          <p>Giá: 1200.000</p>
-        </div>
-        <div class="product">
-          <img src="ảnh/2.1.jpg" alt="Áo Polo Gucci" />
-          <h4>Áo Polo Gucci</h4>
-          <p>Giá: 1500.000</p>
-        </div>
-        <div class="product">
-          <img src="ảnh/3.1.jpg" alt="Áo Phông Dior" />
-          <h4>Áo Phông Dior</h4>
-          <p>Giá: 1600.000</p>
+    <div class="container">
+      <div class="map">
+        <!-- Embedded Google Map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.902052405348!2d105.76590777401322!3d21.03623718600873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aa8bf6e74527%3A0xa7b3d32bc78964a1!2zNzAgQ8O0IERp4buHbiwgUGjGsOG7nW5nIFRoacOqbiBOYW0sIE5hbSBU4buLIEzGsMahbSwgSGFub2k!5e0!3m2!1sen!2s!4v1697747893652!5m2!1sen!2s"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contact-info">
+        <h2>Liên hệ với chúng tôi</h2>
+        <p>
+          <strong>Địa chỉ:</strong> Ngõ 70 Cầu Diễn - Phường Phúc Diễn - Nam Từ
+          Liêm - Hà Nội
+        </p>
+        <p><strong>Email:</strong> huybuong218@gmail.com</p>
+        <p><strong>Điện thoại:</strong> 0978508696</p>
+        <p>
+          <strong>Thời gian làm việc:</strong> Thứ 2 – Chủ nhật: Thời gian từ
+          8h30 – 21h30
+        </p>
+
+        <div class="form-container">
+          <h3>Gửi thắc mắc cho chúng tôi</h3>
+          <form action="/submit-form" method="post">
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Lời nhắn:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Gửi cho chúng tôi" />
+          </form>
         </div>
       </div>
-    </section>
-
-    <!-- Store Section -->
-    <section class="store">
-      <h3>Cửa Hàng</h3>
-      <hr>
-      <div class="store-grid">
-        <div class="store-item">
-          <img src="ảnh/4.1.jpg" alt="Store Item 1" />
-        </div>
-        <div class="store-item">
-          <img src="ảnh/5.1.jpg" alt="Store Item 2" />
-        </div>
-        <div class="store-item">
-          <img src="ảnh/6.1.jpg" alt="Store Item 3" />
-        </div>
-        
-    </section>
-
-    <section class="new-products">
-  <h3>Sản Phẩm Nổi Bật</h3>
-  <hr>
-  <div class="product-grid">
-    <!-- Sản phẩm 1 -->
-    <div class="product">
-      <div class="product-image">
-        <img src="ảnh/7.1.jpg" alt="Áo Polo Gc đen" />
-      </div>
-      <h4>Áo Polo Dc đen</h4>
-      <p class="price">1.500.000₫</p>
     </div>
-    <div class="product">
-      <div class="product-image">
-        <img src="ảnh/8.1.jpg" alt="Áo Polo Gc đen" />
-      </div>
-      <h4>Áo Polo Gc trắng</h4>
-      <p class="price">1.450.000₫</p>
-    </div>
-    <div class="product">
-      <div class="product-image">
-        <img src="ảnh/9.1.jpg" alt="Áo Polo Gc đen" />
-      </div>
-      <h4>Áo Polo BBR thời trang</h4>
-      <p class="price">1.050.000₫</p>
-    </div>
-    <div class="product">
-      <div class="product-image">
-        <img src="ảnh/10.1.jpg" alt="Áo Polo Gc đen" />
-      </div>
-      <h4>Áo Polo Gc kẻ tay</h4>
-      <p class="price">1.200.000₫</p>
-    </div>
-</section>
-
-
-
-
-    <!-- Footer -->
     <footer>
   <div class="footer-container">
     <div class="footer-item">
@@ -190,8 +151,5 @@
   <div class="footer-bottom">
     <p>Copyright © 2024 Shop AE Boutique | Phát triển bởi Web 3 Ngày</p>
   </div>
-</footer>
-
-    <script src="Home.js"></script>
   </body>
 </html>
