@@ -1,7 +1,21 @@
 {
   "users": [
-   
+    {
+      "id": "bf06",
+      "name": "quanghuy",
+      "email": "huybuong219@gmail.com",
+      "password": "111111"
+    }
   ],
-  "products": [],
+  "products": [
+    {
+      "id": "1",
+      "name": "quanghuy",
+      "price": "1.000.000",
+      "category": "Áo Phông",
+      "image": "1.1.jpg",
+      "desxription": "Áo Phông Gc chất lượng cao "
+    }
+  ],
   "cards": []
 }

@@ -35,3 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // Đặt vị trí khởi động để hiển thị ba slide đầu tiên
   bannerContainer.style.transform = `translateX(0%)`; // Đặt slide đầu tiên
 });
+// Thêm sản phẩm vào giỏ hàng
+function addToCart(productName, productPrice) {
+  const cart = document.getElementById("cart");
+  const cartItems = document.getElementById("cart-items");
+}
+
+// Xem chi tiết sản phẩm
+function viewProduct(productName) {
+  alert(`Bạn đang xem chi tiết sản phẩm: ${productName}`);
+}
