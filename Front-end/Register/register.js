@@ -81,7 +81,12 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(response => {
                 if (response.ok) {
                     alert("Đăng ký thành công! Chuyển hướng đến trang đăng nhập.");
-                    window.location.href = "../Login/login.html"; // Chuyển hướng sang trang đăng nhập
+                    
+                    // Thay đổi URL mà không tải lại trang
+                    window.history.pushState({}, '', '../Login/login.html');
+                    
+                    // Thực hiện điều hướng bằng cách tải trang mới
+                    location.reload();
                 } else {
                     messageDiv.textContent = "Đăng ký thất bại. Vui lòng thử lại.";
                 }

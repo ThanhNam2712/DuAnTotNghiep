@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 if (user) {
                     alert("Đăng nhập thành công! Chuyển hướng đến trang chủ.");
-                    window.location.href = "../Home/Home.html"; // Chuyển hướng đến trang chủ
+                    window.location.href = "../Home/Home.html";
                 } else {
                     alert("Email hoặc mật khẩu không chính xác.");
                 }
