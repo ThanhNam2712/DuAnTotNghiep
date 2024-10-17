@@ -82,82 +82,28 @@
     <h3>Sản Phẩm Mới</h3>
     <hr>
     <div class="product-container">
-        <!-- Sản phẩm 1 -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="ảnh/11.1.jpg" alt="Áo Gucci màu kem kẻ cánh tay" />
-                <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                        <img src="ảnh/cart.png" alt="Giỏ hàng" width="20" height="20">
-                    </button>
-                    <button class="view-icon" onclick="viewProduct('Áo Gucci màu kem kẻ cánh tay')">
-                        <img src="ảnh/view.png" alt="Xem sản phẩm" width="20" height="20">
-                    </button>
-                </div>
-            </div>
-            <div class="product-details">
-                <h4>Áo Gucci màu kem kẻ cánh tay</h4>
-                <div class="rating">★★★★★</div>
-                <p class="price">1.950.000₫</p>
-            </div>
-        </div>
-        <!-- Sản phẩm 2 -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="ảnh/s1.jpg" alt="Sơ mi cộc Dior xanh" />
-                <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Sơ mi cộc Dior xanh', 1950000)">
-                        <img src="ảnh/cart.png" alt="Giỏ hàng" width="20" height="20">
-                    </button>
-                    <button class="view-icon" onclick="viewProduct('Sơ mi cộc Dior xanh')">
-                        <img src="ảnh/view.png" alt="Xem sản phẩm" width="20" height="20">
-                    </button>
-                </div>
-            </div>
-            <div class="product-details">
-                <h4>Sơ mi cộc Dior xanh</h4>
-                <div class="rating">★★★★★</div>
-                <p class="price">1.200.000₫</p>
-            </div>
-        </div>
-        <!-- Sản phẩm 3 -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="ảnh/s2.jpg" alt="Sơ mi dài tay VerSace" />
-                <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Sơ mi dài tay VerSace', 1950000)">
-                        <img src="ảnh/cart.png" alt="Giỏ hàng" width="20" height="20">
-                    </button>
-                    <button class="view-icon" onclick="viewProduct('Sơ mi dài tay VerSace')">
-                        <img src="ảnh/view.png" alt="Xem sản phẩm" width="20" height="20">
-                    </button>
-                </div>
-            </div>
-            <div class="product-details">
-                <h4>Sơ mi dài tay VerSace</h4>
-                <div class="rating">★★★★★</div>
-                <p class="price">1.050.000₫</p>
-            </div>
-        </div>
-        <!-- Sản phẩm 4 -->
-        <div class="product-card">
-            <div class="product-image">
-                <img src="ảnh/s3.jpg" alt="Sơ mi dài tay trắng DSQ" />
-                <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Sơ mi dài tay trắng DSQ', 1950000)">
-                        <img src="ảnh/cart.png" alt="Giỏ hàng" width="20" height="20">
-                    </button>
-                    <button class="view-icon" onclick="viewProduct('Sơ mi dài tay trắng DSQ')">
-                        <img src="ảnh/view.png" alt="Xem sản phẩm" width="20" height="20">
-                    </button>
-                </div>
-            </div>
-            <div class="product-details">
-                <h4>Sơ mi dài tay trắng DSQ</h4>
-                <div class="rating">★★★★★</div>
-                <p class="price">1.150.000₫</p>
-            </div>
-        </div>
+      <!-- Sản phẩm 1 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1"></div>
+    <div class="product-details" id="product-details-1"></div>
+</div>
+<!-- Sản phẩm 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-2"></div>
+    <div class="product-details" id="product-details-2"></div>
+</div>
+<!-- Sản phẩm 1 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-3"></div>
+    <div class="product-details" id="product-details-3"></div>
+</div>
+<!-- Sản phẩm 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-4"></div>
+    <div class="product-details" id="product-details-4"></div>
+</div>
+
+
     </div>
 </section>
 
@@ -169,15 +115,17 @@
       <hr>
       <div class="store-grid">
         <div class="store-item">
-          <img src="ảnh/4.1.jpg" alt="Store Item 1" />
+          <div class="product-image" id="product-image-5"></div>
+    <div class="product-details" id="product-details-5"></div>
         </div>
         <div class="store-item">
-          <img src="ảnh/5.1.jpg" alt="Store Item 2" />
+          <div class="product-image" id="product-image-6"></div>
+    <div class="product-details" id="product-details-6"></div>
         </div>
         <div class="store-item">
-          <img src="ảnh/6.1.jpg" alt="Store Item 3" />
+          <div class="product-image" id="product-image-7"></div>
+    <div class="product-details" id="product-details-7"></div>
         </div>
-        
     </section>
 
     <section class="new-products">
@@ -186,37 +134,21 @@
   <div class="product-grid">
     <!-- Sản phẩm 1 -->
     <div class="product">
-      <div class="product-image">
-        <img src="ảnh/7.1.jpg" alt="Áo Polo Gc đen" />
-      </div>
-      <h4>Áo Polo Dc đen</h4>
-      <p class="price">1.500.000₫</p>
+       <div class="product-image" id="product-image-8"></div>
+    <div class="product-details" id="product-details-8"></div>
     </div>
     <div class="product">
-      <div class="product-image">
-        <img src="ảnh/8.1.jpg" alt="Áo Polo Gc đen" />
-      </div>
-      <h4>Áo Polo Gc trắng</h4>
-      <p class="price">1.450.000₫</p>
+       <div class="product-image" id="product-image-9"></div>
+    <div class="product-details" id="product-details-9"></div>
     </div>
     <div class="product">
-      <div class="product-image">
-        <img src="ảnh/9.1.jpg" alt="Áo Polo Gc đen" />
-      </div>
-      <h4>Áo Polo BBR thời trang</h4>
-      <p class="price">1.050.000₫</p>
+       <div class="product-image" id="product-image-10"></div>
+    <div class="product-details" id="product-details-10"></div>
     </div>
     <div class="product">
-      <div class="product-image">
-        <img src="ảnh/10.1.jpg" alt="Áo Polo Gc đen" />
-      </div>
-      <h4>Áo Polo Gc kẻ tay</h4>
-      <p class="price">1.200.000₫</p>
-    </div>
+      <div class="product-image" id="product-image-11"></div>
+    <div class="product-details" id="product-details-11"></div>
 </section>
-
-
-
 
     <!-- Footer -->
     <footer>

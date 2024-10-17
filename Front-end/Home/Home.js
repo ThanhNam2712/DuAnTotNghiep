@@ -45,3 +45,27 @@ function addToCart(productName, productPrice) {
 function viewProduct(productName) {
   alert(`Bạn đang xem chi tiết sản phẩm: ${productName}`);
 }
+// Fetch dữ liệu từ db.json
+fetch("db.json")
+  .then((response) => response.json())
+  .then((data) => {
+    // Lấy danh sách sản phẩm từ JSON
+    const products = data.products;
+
+    // Duyệt qua từng sản phẩm và thêm vào giao diện
+    products.forEach((product, index) => {
+      // Tạo đường dẫn ảnh
+      const imagePath = "ảnh/" + product.image;
+
+      // Cập nhật phần tử HTML với ảnh và thông tin sản phẩm
+      document.getElementById(`product-image-${index + 1}`).innerHTML = `
+                <img src="${imagePath}" alt="${product.name}">
+            `;
+      document.getElementById(`product-details-${index + 1}`).innerHTML = `
+                <h4>${product.name}</h4>
+                <p class="price">${product.price}₫</p>
+                <h4>${product.description}</h4>
+            `;
+    });
+  })
+  .catch((error) => console.error("Error fetching product data:", error));
