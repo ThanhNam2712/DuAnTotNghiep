@@ -1,47 +1,14 @@
-Home.css body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: white;
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
-
-header .logo h1 {
-  margin: 0;
-}
-
 nav ul {
   list-style-type: none;
   padding: 0;
 }
-
 nav ul li {
   display: inline;
   margin: 0 10px;
 }
-
 nav ul li a {
   color: white;
   text-decoration: none;
-}
-
-.banner {
-  position: relative;
-  text-align: center;
-}
-
-.banner h2 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 3em;
 }
 
 .product-grid,
@@ -61,15 +28,6 @@ footer {
   color: white;
   padding: 20px;
   text-align: center;
-}
-/* Header Styles */
-header {
-  display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử trong header */
-  justify-content: space-between; /* Tạo khoảng cách đều giữa logo, menu và biểu tượng */
-  align-items: center; /* Căn giữa theo chiều dọc */
-  background-color: #fff; /* Màu nền cho header */
-  padding: 10px 20px; /* Padding cho header */
-  box-shadow: 0 2px 4px white(0, 0, 0, 0.1); /* Đổ bóng cho header */
 }
 
 .logo {
@@ -111,23 +69,6 @@ nav ul li a:hover {
   color: #007bff; /* Màu chữ khi hover */
 }
 
-.header-icons {
-  display: flex; /* Sử dụng flexbox để căn chỉnh các biểu tượng */
-  align-items: center; /* Căn giữa theo chiều dọc */
-}
-
-.header-icons a {
-  margin-left: 15px; /* Khoảng cách giữa các biểu tượng */
-}
-
-.header-icons img {
-  width: 24px; /* Kích thước cho các biểu tượng */
-  height: 24px; /* Kích thước cho các biểu tượng */
-  transition: transform 0.3s; /* Thêm hiệu ứng chuyển tiếp khi hover */
-}
-.header-icons img:hover {
-  transform: scale(1.1); /* Tăng kích thước biểu tượng khi hover */
-}
 /* Container banner */
 .banner {
   position: relative; /* Để đặt các phần tử con tuyệt đối */
@@ -155,28 +96,6 @@ nav ul li a:hover {
   border-radius: 10px; /* Bo góc cho ảnh */
 }
 
-/* Các nút điều khiển */
-.banner-controls {
-  position: absolute; /* Đặt nút ở vị trí tuyệt đối trong banner */
-  top: 50%; /* Đặt giữa chiều dọc */
-  left: 0;
-  right: 0;
-  display: flex; /* Sử dụng flexbox để căn chỉnh */
-  justify-content: space-between; /* Đặt nút ở hai bên */
-  transform: translateY(-50%); /* Đưa nút lên giữa chiều dọc */
-  z-index: 10; /* Đặt nút trên cùng */
-  padding: 0 10px; /* Khoảng cách từ mép */
-}
-
-.banner-controls button {
-  background-color: rgba(255, 255, 255, 0.7); /* Màu nền cho nút */
-  border: none; /* Không có đường viền */
-  border-radius: 50%; /* Bo góc cho nút */
-  padding: 10px; /* Khoảng cách bên trong */
-  cursor: pointer; /* Đổi con trỏ khi hover */
-  transition: background-color 0.3s; /* Hiệu ứng chuyển màu khi hover */
-  font-size: 24px; /* Kích thước chữ cho nút */
-}
 /* Cấu trúc cho cửa hàng */
 .store {
   max-width: 1200px; /* Chiều rộng tối đa của cửa hàng */
@@ -352,11 +271,6 @@ body {
   font-size: 14px;
 }
 
-.footer-item ul li a:hover {
-  color: #007bff; /* Blue on hover */
-  text-decoration: underline;
-}
-
 /* Social Media Icons */
 .social-icons a img {
   width: 30px;
@@ -395,13 +309,6 @@ body {
 .footer-bottom p {
   margin: 0;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: white;
-}
 
 .logo img {
   width: 150px; /* Điều chỉnh kích thước logo */
@@ -425,35 +332,26 @@ nav ul li a {
   color: #333;
   transition: color 0.3s;
 }
-
 nav ul li a:hover {
   color: #007bff;
 }
-
 .header-icons a {
   margin-left: 15px;
 }
-
 .header-icons img {
   width: 25px; /* Kích thước icon */
   height: 25px;
   transition: opacity 0.3s;
-}
-
-.header-icons a:hover img {
-  opacity: 0.7;
 }
 .new-products .product-grid {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
-
 .new-products .product {
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .new-products .product img {
   width: 100%;
   height: auto;
@@ -533,15 +431,6 @@ nav ul li a:hover {
   font-weight: bold;
   margin-top: 5px;
 }
-/* Tổng thể */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #f8f8f8;
-}
-
 .logo img {
   width: 150px;
 }
@@ -568,16 +457,6 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #ddd;
   border-radius: 5px;
-}
-
-.header-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.header-icons a img {
-  width: 24px;
-  height: 24px;
 }
 
 /* Dropdown */
@@ -647,17 +526,6 @@ nav ul li a:hover {
   background-color: #ddd;
   border-radius: 5px;
 }
-
-.header-icons {
-  display: flex;
-  gap: 15px;
-}
-
-.header-icons a img {
-  width: 24px;
-  height: 24px;
-}
-
 /* Dropdown Menu Vertical (như trong ảnh) */
 .dropdown-menu {
   display: none;
