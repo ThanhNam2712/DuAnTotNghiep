@@ -1,0 +1,36 @@
+{
+  "users": [],
+  "products": [],
+  "orders": [
+    {
+      "id": "1",
+      "customerName": "Do Dinh Canh",
+      "phoneNumber": "0974468416",
+      "address": "Ha Noi",
+      "productName": "Ao Polo",
+      "totalPrice": "100.000.000",
+      "status": "Hủy",
+      "orderDate": "18/10/2024"
+    },
+    {
+      "id": "2",
+      "customerName": "Do Dinh Canh 2",
+      "phoneNumber": "0987654321",
+      "address": "Ha Noi",
+      "productName": "Ao Phong",
+      "totalPrice": "200.000.000",
+      "status": "Đã Xác nhận",
+      "orderDate": "18/10/2024"
+    },
+    {
+      "id": "3",
+      "customerName": "Do Dinh Canh 3",
+      "phoneNumber": "0987654321",
+      "address": "Ha Noi",
+      "productName": "Ao Phong",
+      "totalPrice": "300.000.000",
+      "status": "Chờ xác nhận",
+      "orderDate": "18/10/2024"
+    }
+  ]
+}

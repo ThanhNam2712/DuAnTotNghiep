@@ -46,10 +46,3 @@ minusBtn.addEventListener("click", () => {
     quantityInput.value = currentValue - 1;
   }
 });
-
-document.getElementById("loadMore").addEventListener("click", function () {
-  // Giả sử bạn có thêm các sản phẩm để hiển thị
-  // Bạn có thể tải thêm sản phẩm từ server hoặc hiển thị các sản phẩm ẩn
-  alert("Thêm sản phẩm");
-  // Hoặc gọi hàm để tải sản phẩm từ API
-});

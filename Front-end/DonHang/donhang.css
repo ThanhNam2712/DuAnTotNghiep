@@ -1,0 +1,240 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f0a500;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.icons a:hover {
+  color: #f0a500;
+}
+
+.banner {
+  width: 100%;
+  height: 250px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.actions button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actions .details-btn {
+  background-color: #5bc0de;
+  color: white;
+}
+
+.actions .cancel-btn {
+  background-color: #d9534f;
+  color: white;
+}
+
+.actions .details-btn:hover {
+  background-color: #31b0d5;
+}
+
+.actions .cancel-btn:hover {
+  background-color: #c9302c;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 14px;
+}
+
+.status.cancelled {
+  background-color: #d9534f; /* Màu đỏ cho trạng thái Hủy */
+}
+
+.status.pending {
+  background-color: #f0ad4e; /* Màu vàng cho trạng thái Chờ xác nhận */
+}
+
+.status.confirmed {
+  background-color: #5cb85c; /* Màu xanh lá cho trạng thái Xác nhận */
+}
+
+td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+td.actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(166, 166, 166); /* Light background color */
+  padding: 40px 20px; /* Spacious padding */
+  border-top: 1px solid white; /* Soft border at the top */
+  font-family: Arial, sans-serif;
+}
+
+.footer-item {
+  flex-basis: 30%; /* Each section takes up 30% of the available width */
+  margin-right: 20px;
+}
+
+.footer-item h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: black; /* Dark color for the headings */
+  font-weight: 600;
+}
+
+.footer-item h6 {
+  font-size: 14px;
+  color: black; /* Subtle gray color for text */
+  margin-bottom: 20px;
+}
+
+.footer-item ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-item ul li {
+  margin-bottom: 10px;
+}
+
+.footer-item ul li a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Social Media Icons */
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover img {
+  opacity: 0.8;
+}
+
+/* Hotline Section */
+.hotline span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #cd2323;
+}
+
+/* Payment Icons */
+.payment-icons img {
+  width: 50px;
+  margin-right: 10px;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: white; /* Light gray background */
+  color: white; /* Text color */
+  font-size: 12px;
+  border-top: 1px solid white;
+}
+
+.footer-bottom p {
+  margin: 0;
+}

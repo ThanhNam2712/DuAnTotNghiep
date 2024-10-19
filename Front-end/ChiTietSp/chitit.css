@@ -421,21 +421,6 @@ body {
   height: 1px;
   background-color: rgb(203, 203, 203);
 }
-
-/* .product-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.product-item {
-  background-color: #f0eeee;
-  border: 1px solid #e0e0e0;
-  width: 20%;
-  margin-bottom: 20px;
-  position: relative;
-} */
-
 .product-list {
   display: flex;
   justify-content: space-between;

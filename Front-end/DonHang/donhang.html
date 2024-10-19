@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="donhang.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="../Ảnh/logo.png" alt="" />
+
+          <a href="#">AE Boutique</a>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Cửa hàng</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <a href="#" class="icon user-icon"><i class="fas fa-user"></i></a>
+          <a href="#" class="icon search-icon"><i class="fas fa-search"></i></a>
+          <a href="#" class="icon heart-icon"><i class="fas fa-heart"></i></a>
+          <a href="#" class="icon cart-icon"
+            ><i class="fas fa-shopping-cart"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <img class="banner" src="../Ảnh/banner.png" alt="" /><br /><br />
+
+    <h1>Danh sách đơn hàng</h1>
+    <table id="orderTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Người đặt</th>
+          <th>SDT</th>
+          <th>Email</th>
+          <th>Địa chỉ</th>
+          <th>Tổng tiền</th>
+          <th>Trạng thái</th>
+          <th>Thời gian đặt</th>
+          <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody id="orderTableBody">
+        <!-- Dynamic rows will be injected by JavaScript -->
+      </tbody>
+    </table>
+    <br /><br />
+
+    <footer>
+      <hr />
+      <div class="footer-container">
+        <div class="footer-item">
+          <h5>Shop AE Boutique</h5>
+          <h6>
+            Shop AE Boutique chuyên buôn, sỉ, lẻ, order hàng thời trang, giá tốt
+            nhất thị trường. Nơi mua sắm mới nhất cho những khách hàng yêu quý.
+          </h6>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/aeboutique69"
+              ><img src="ảnh/fb.png" alt="Facebook"
+            /></a>
+            <a href="#"><img src="ảnh/youtube.png" alt="YouTube" /></a>
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <h5>Liên kết nhanh</h5>
+          <ul>
+            <li><a href="#">Hướng dẫn đặt hàng</a></li>
+            <li><a href="#">Hướng dẫn thanh toán</a></li>
+            <li><a href="#">Chính sách đổi trả hàng</a></li>
+            <li><a href="#">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h5>Hotline hỗ trợ 24/7</h5>
+          <div class="hotline">
+            <span>0975986096</span>
+          </div>
+          <h5>Chấp nhận thanh toán</h5>
+          <div class="payment-icons">
+            <img src="ảnh/momo.png" alt="Momo" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="donhang.js"></script>
+  </body>
+</html>
