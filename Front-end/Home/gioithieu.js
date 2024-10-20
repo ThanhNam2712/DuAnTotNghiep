@@ -45,10 +45,10 @@ document.addEventListener("DOMContentLoaded", function () {
     dropdownMenu.className = "dropdown-menu";
 
     const dropdownItems = [
-      { name: "Áo polo", link: "polo.html" },
-      { name: "Áo phông", link: "phong.html" },
-      { name: "Quần áo bộ", link: "quanaobo.html" },
-      { name: "Sơ mi", link: "somi.html" }, // Thay đổi ở đây
+      { name: "Áo polo", link: "danhmuc/polo.html" },
+      { name: "Áo phông", link: "danhmuc/phong.html" },
+      { name: "Quần áo bộ", link: "danhmuc/quanaobo.html" },
+      { name: "Sơ mi", link: "danhmuc/somi.html" },
     ];
 
     dropdownItems.forEach((dropdownItem) => {

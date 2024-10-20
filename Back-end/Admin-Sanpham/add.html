@@ -22,7 +22,8 @@
           <option value="">Chọn danh mục</option>
           <option value="polo">Polo</option>
           <option value="phong">Phông</option>
-          <option value="quan">Quần ngố</option>
+          <option value="quan">Quần áo bộ</option>
+          <option value="quan">Sơ mi</option>
         </select>
 
         <label for="image">Ảnh sản phẩm</label>
@@ -34,37 +35,40 @@
         <input type="submit" value="Submit" />
       </form>
     </div>
-
     <script>
       document
         .getElementById("add-product-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Ngăn chặn việc gửi form mặc định
+        .addEventListener("submit", async function (event) {
+          event.preventDefault();
 
           const name = document.getElementById("name").value;
           const price = document.getElementById("price").value;
           const category = document.getElementById("category").value;
-          const image = document.getElementById("image").files[0]; // Nhận file ảnh
+          const image = document.getElementById("image").files[0];
           const description = document.getElementById("description").value;
 
-          // Tạo đối tượng sản phẩm mới
-          const newProduct = {
-            id: Date.now().toString(), // Sử dụng thời gian hiện tại làm ID
-            name: name,
-            price: price,
-            description: description,
-            size: "M", // Giá trị mặc định, có thể thêm trường size vào form
-            danhmuc: category,
-            image: URL.createObjectURL(image), // Tạo đường dẫn tạm thời cho ảnh
-          };
+          const formData = new FormData();
+          formData.append("name", name);
+          formData.append("price", price);
+          formData.append("category", category);
+          formData.append("image", image); // Thêm file ảnh vào form
+          formData.append("description", description);
 
-          // Lưu sản phẩm vào localStorage (hoặc có thể gửi lên server)
-          const products = JSON.parse(localStorage.getItem("products")) || [];
-          products.push(newProduct);
-          localStorage.setItem("products", JSON.stringify(products));
+          try {
+            const response = await fetch("http://localhost:3000/products", {
+              method: "POST",
+              body: formData, // Gửi FormData thay vì JSON
+            });
 
-          alert("Sản phẩm đã được thêm thành công!");
-          window.location.href = "../Admin-Sanpham/sanpham.html"; // Điều hướng về trang quản lý sản phẩm
+            if (response.ok) {
+              alert("Sản phẩm đã được thêm thành công!");
+              window.location.href = "sanpham.html";
+            } else {
+              alert("Có lỗi xảy ra!");
+            }
+          } catch (error) {
+            console.error("Lỗi khi thêm sản phẩm:", error);
+          }
         });
     </script>
   </body>

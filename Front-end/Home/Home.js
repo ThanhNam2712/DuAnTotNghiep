@@ -46,7 +46,7 @@ function viewProduct(productName) {
   alert(`Bạn đang xem chi tiết sản phẩm: ${productName}`);
 }
 // Fetch dữ liệu từ db.json
-fetch("db.json")
+fetch("../../db.json")
   .then((response) => response.json())
   .then((data) => {
     // Lấy danh sách sản phẩm từ JSON

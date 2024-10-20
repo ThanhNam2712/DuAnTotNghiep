@@ -1,0 +1,109 @@
+{
+  "users": [
+    {
+      "id": "bf06",
+      "name": "quanghuy",
+      "email": "huybuong219@gmail.com",
+      "password": "111111"
+    }
+  ],
+  "products": [
+    {
+      "name": "Áo phông đẹp chất",
+      "price": "300000",
+      "image": "1.1.jpg",
+      "category": "phong",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "1"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "2.1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "2"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "3.1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "3"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "4.1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "4"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "5.1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "5"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "6.1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "6"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "7.1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "7"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "8.1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "8"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "9.1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "9"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "10.1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "10"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "p1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "11"
+    },
+    {
+      "name": "Áo phông docle lever",
+      "price": "300000",
+      "category": "phong",
+      "image": "p1.1.jpg",
+      "description": "Áo Phông Gc chất lượng cao",
+      "id": "12"
+    }
+  ],
+  "cards": []
+}
