@@ -55,7 +55,7 @@ fetch("../../db.json")
     // Duyệt qua từng sản phẩm và thêm vào giao diện
     products.forEach((product, index) => {
       // Tạo đường dẫn ảnh
-      const imagePath = "ảnh/" + product.image;
+      const imagePath = "../anh/" + product.image;
 
       // Cập nhật phần tử HTML với ảnh và thông tin sản phẩm
       document.getElementById(`product-image-${index + 1}`).innerHTML = `

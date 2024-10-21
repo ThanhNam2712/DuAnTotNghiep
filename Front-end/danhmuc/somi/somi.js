@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const logoDiv = document.createElement("div");
   logoDiv.classList.add("logo");
   const logoLink = document.createElement("a");
-  logoLink.href = "../Home.html";
+  logoLink.href = "../../Home/Home.html";
   const logoImg = document.createElement("img");
-  logoImg.src = "../ảnh/logo.png";
+  logoImg.src = "../../anh/logo.png";
   logoImg.alt = "Logo";
   logoLink.appendChild(logoImg);
   logoDiv.appendChild(logoLink);
@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const navList = document.createElement("ul");
 
   const navItems = [
-    { href: "../Home.html", text: "Trang chủ" },
-    { href: "../gioithieu.html", text: "Giới thiệu" },
-    { href: "../lienhe.html", text: "Liên hệ" },
+    { href: "../../Home/Home.html", text: "Trang chủ" },
+    { href: "../../gioithieu/gioithieu.html", text: "Giới thiệu" },
+    { href: "../../lienhe/lienhe.html", text: "Liên hệ" },
   ];
 
   navItems.forEach((item) => {
@@ -42,9 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
   dropdownMenu.classList.add("dropdown-menu");
 
   const dropdownItems = [
-    { href: "polo.html", text: "Áo polo" },
-    { href: "phong.html", text: "Áo phông" },
-    { href: "quanaobo.html", text: "Quần áo bộ" },
+    { href: "../polo/polo.html", text: "Áo polo" },
+    { href: "../phong/phong.html", text: "Áo phông" },
+    { href: "../quanaobo/quanaobo.html", text: "Quần áo bộ" },
     { href: "somi.html", text: "Áo sơ mi" },
   ];
 
@@ -66,16 +66,16 @@ document.addEventListener("DOMContentLoaded", function () {
   headerIconsDiv.classList.add("header-icons");
 
   const searchIcon = createIconLink(
-    "../timkiem.html",
-    "../ảnh/searcher.jpg",
+    "../../Home/timkiem.html",
+    "../../anh/searcher.jpg",
     "Search"
   );
   const userIcon = createIconLink(
     "../../Register/register.html",
-    "../ảnh/user.jpg",
+    "../../anh/user.jpg",
     "User"
   );
-  const cartIcon = createIconLink("#", "../ảnh/cart.png", "Cart");
+  const cartIcon = createIconLink("#", "../../anh/cart.png", "Cart");
 
   headerIconsDiv.appendChild(searchIcon);
   headerIconsDiv.appendChild(userIcon);
@@ -96,23 +96,23 @@ document.addEventListener("DOMContentLoaded", function () {
   bannerContainer.classList.add("banner-container");
 
   const bannerImages = [
-    "banner1.jpg",
-    "banner2.jpg",
-    "banner3.jpg",
-    "banner4.jpg",
-    "banner5.jpg",
-    "banner6.jpg",
-    "banner7.jpg",
-    "banner8.jpg",
-    "banner9.jpg",
-    "banner10.jpg",
+    "../../../anh/banner/banner1.jpg",
+    "../../..//anh/banner/banner2.jpg",
+    "../../..//anh/banner/banner3.jpg",
+    "../../..//anh/banner/banner4.jpg",
+    "../../..//anh/banner/banner5.jpg",
+    "../../..//anh/banner/banner6.jpg",
+    "../../..//anh/banner/banner7.jpg",
+    "../../..//anh/banner/banner8.jpg",
+    "../../..//anh/banner/banner9.jpg",
+    "../../..//anh/banner/banner10.jpg",
   ];
 
   bannerImages.forEach((src) => {
     const bannerSlide = document.createElement("div");
     bannerSlide.classList.add("banner-slide");
     const img = document.createElement("img");
-    img.src = `../ảnh/banner/${src}`;
+    img.src = `../anh/banner/${src}`;
     img.alt = `Banner ${src}`;
     bannerSlide.appendChild(img);
     bannerContainer.appendChild(bannerSlide);
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
   newProductsSection.classList.add("new-products");
 
   const productTitle = document.createElement("h3");
-  productTitle.textContent = "Áo Phông";
+  productTitle.textContent = "Áo Sơ Mi";
 
   const productHr = document.createElement("hr");
 
@@ -153,10 +153,31 @@ document.addEventListener("DOMContentLoaded", function () {
   productContainer.classList.add("product-container");
 
   const productImages = [
-    { src: "p1.jpg", name: "Áo Phông Trắng", price: 150000 },
-    { src: "p2.jpg", name: "Áo Phông Đen", price: 160000 },
-    { src: "p3.jpg", name: "Áo Gucci màu kem kẻ cánh tay", price: 1950000 },
-    { src: "p4.jpg", name: "Áo Polo Xanh", price: 175000 },
+    {
+      src: "../../anh/s2.jpg",
+      name: "Áo sơ mi DG họa tiết Hoa vàng",
+      price: 850000,
+    },
+    {
+      src: "../../anh/s3.jpg",
+      name: "Áo sơ mi DSQ chữ đen ở ngực",
+      price: 850000,
+    },
+    {
+      src: "../../anh/s4.jpg",
+      name: "Áo sơ mi DIOr chữ đen ở ngực",
+      price: 830000,
+    },
+    {
+      src: "../../anh/s5.jpg",
+      name: "Áo sơ mi trắng dài tay kẻ cổ tay",
+      price: 830000,
+    },
+    {
+      src: "../../anh/s6.jpg",
+      name: "Áo sơ mi BBR kẻ hàng LikeAuth",
+      price: 830000,
+    },
   ];
 
   productImages.forEach((product, index) => {
@@ -165,9 +186,23 @@ document.addEventListener("DOMContentLoaded", function () {
     productImageDiv.id = `product-image-${index + 1}`;
 
     const img = document.createElement("img");
-    img.src = `../ảnh/${product.src}`;
+    img.src = `../anh/${product.src}`;
     img.alt = `Hình sản phẩm ${index + 1}`;
     productImageDiv.appendChild(img);
+
+    // Tạo div chứa tên và giá sản phẩm
+    const productInfoDiv = document.createElement("div");
+    productInfoDiv.classList.add("product-info");
+
+    const productName = document.createElement("p");
+    productName.textContent = product.name;
+
+    const productPrice = document.createElement("p");
+    productPrice.textContent = `${product.price.toLocaleString()} đ`;
+
+    productInfoDiv.appendChild(productName);
+    productInfoDiv.appendChild(productPrice);
+    productImageDiv.appendChild(productInfoDiv);
 
     // Tạo div chứa icon giỏ hàng
     const iconsDiv = document.createElement("div");
@@ -178,7 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
     cartButton.onclick = () => addToCart(product.name, product.price);
 
     const cartImg = document.createElement("img");
-    cartImg.src = "../ảnh/cart.png";
+    cartImg.src = "../../anh/cart.png";
     cartImg.alt = "Giỏ hàng";
     cartImg.width = 20;
     cartImg.height = 20;
@@ -212,10 +247,10 @@ document.addEventListener("DOMContentLoaded", function () {
       socialIcons: [
         {
           href: "https://www.facebook.com/aeboutique69",
-          src: "../ảnh/fb.png",
+          src: "../../anh/fb.png",
           alt: "Facebook",
         },
-        { href: "#", src: "../ảnh/youtube.png", alt: "YouTube" },
+        { href: "#", src: "../../anh/youtube.png", alt: "YouTube" },
       ],
     },
     {
@@ -228,9 +263,9 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
     },
     {
-      title: "Hotline hỗ trợ 24/7",
-      content: "0975986096",
-      paymentIcons: [{ src: "../ảnh/momo.png", alt: "Momo" }],
+      title: "Chấp nhận thanh toán",
+
+      paymentIcons: [{ src: "../../anh/momo.png", alt: "Momo" }],
     },
   ];
 
