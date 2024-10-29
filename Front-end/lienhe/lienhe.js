@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const logoDiv = document.createElement("div");
     logoDiv.className = "logo";
     const logoLink = document.createElement("a");
-    logoLink.href = "../HomeHome.html";
+    logoLink.href = "../Home/Home.html";
     const logoImg = document.createElement("img");
     logoImg.src = "../anh/logo.png";
     logoImg.alt = "Logo";
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const ul = document.createElement("ul");
 
     const pages = [
-      { name: "Trang chủ", href: "../HomeHome.html" },
+      { name: "Trang chủ", href: "../Home/Home.html" },
       { name: "Giới thiệu", href: "../gioithieu/gioithieu.html" },
       { name: "Liên hệ", href: "lienhe.html" },
     ];
