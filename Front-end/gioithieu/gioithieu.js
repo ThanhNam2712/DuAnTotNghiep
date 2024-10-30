@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
     userLink.appendChild(userImg);
 
     const cartLink = document.createElement("a");
-    cartLink.href = "#";
+    cartLink.href = "../DonHang/donhang.html";
     const cartImg = document.createElement("img");
     cartImg.src = "../anh/cart.png";
     cartImg.alt = "Cart";

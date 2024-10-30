@@ -75,7 +75,11 @@ document.addEventListener("DOMContentLoaded", function () {
     "../../anh/user.jpg",
     "User"
   );
-  const cartIcon = createIconLink("#", "../../anh/cart.png", "Cart");
+  const cartIcon = createIconLink(
+    "../../DonHang/donhang.html",
+    "../../anh/cart.png",
+    "Cart"
+  );
 
   headerIconsDiv.appendChild(searchIcon);
   headerIconsDiv.appendChild(userIcon);

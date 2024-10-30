@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AE Boutique</title>
+    <link rel="stylesheet" href="../Home/Home.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="../Home/Home.html"><img src="../anh/logo.png" alt="Logo" /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../Home/Home.html">Trang chủ</a></li>
+          <li><a href="../gioithieu/gioithieu.html">Giới thiệu</a></li>
+          <li><a href="../lienhe/lienhe.html">Liên hệ</a></li>
+          <li class="dropdown">
+            <a href="#">Bộ sưu tập</a>
+            <ul class="dropdown-menu">
+              <li><a href="../danhmuc/polo/polo.html">Áo Polo</a></li>
+              <li><a href="../danhmuc/phong/phong.html">Áo phông</a></li>
+              <li>
+                <a href="../danhmuc/quanaobo/quanaobo.html">Quần áo bộ</a>
+              </li>
+              <li><a href="../danhmuc/somi/somi.html"> Áo sơ mi</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-icons">
+        <a href="../Home/timkiem.html"
+          ><img src="../anh/searcher.jpg" alt="Search"
+        /></a>
+        <a href="../Register/register.html"
+          ><img src="../anh/user.jpg" alt="User"
+        /></a>
+        <a href="../DonHang/donhang.html"
+          ><img src="../anh/cart.png" alt="Cart"
+        /></a>
+      </div>
+    </header>
+
+    <!-- Main Banner -->
+    <section class="banner">
+      <div class="banner-container">
+        <div class="banner-slide">
+          <img src="../anh/banner/banner1.jpg" alt="Banner 1" />
+        </div>
+        <div class="banner-slide">
+          <img src="../anh/banner/banner2.jpg" alt="Banner 2" />
+        </div>
+        <div class="banner-slide">
+          <img src="../anh/banner/banner3.jpg" alt="Banner 3" />
+        </div>
+        <div class="banner-slide">
+          <img src="../anh/banner/banner4.jpg" alt="Banner 4" />
+        </div>
+        <div class="banner-slide">
+          <img src="../anh/banner/banner5.jpg" alt="Banner 5" />
+        </div>
+        <div class="banner-slide">
+          <img src="../anh/banner/banner6.jpg" alt="Banner 6" />
+        </div>
+        <div class="banner-slide">
+          <img src="../anh/banner/banner7.jpg" alt="Banner 7" />
+        </div>
+        <div class="banner-slide">
+          <img src="../anh/banner/banner8.jpg" alt="Banner 8" />
+        </div>
+        <div class="banner-slide">
+          <img src="../anh/banner/banner9.jpg" alt="Banner 9" />
+        </div>
+        <div class="banner-slide">
+          <img src="../anh/banner/banner10.jpg" alt="Banner 10" />
+        </div>
+      </div>
+      <div class="banner-controls">
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product">
+      <div class="container">
+        <div class="main-content">
+          <!-- Hình ảnh sản phẩm và các lựa chọn thumbnail -->
+          <div class="product-image-section">
+            <div class="product-thumbnails">
+              <img
+                src="../anh/1.1.jpg"
+                alt="Sofa 1"
+                class="thumbnail"
+                onclick="changeImage('sofa1.jpg')"
+              />
+              <img
+                src="../anh/2.1.jpg"
+                alt="Sofa 2"
+                class="thumbnail"
+                onclick="changeImage('sofa2.jpg')"
+              />
+              <img
+                src="../anh/3.1.jpg"
+                alt="Sofa 3"
+                class="thumbnail"
+                onclick="changeImage('sofa3.jpg')"
+              />
+              <img
+                src="../anh/4.1.jpg"
+                alt="Sofa 4"
+                class="thumbnail"
+                onclick="changeImage('sofa4.jpg')"
+              />
+            </div>
+            <div class="product-main-image">
+              <img
+                src="../anh/5.1.jpg"
+                id="main-product-image"
+                alt="Main Sofa"
+              />
+            </div>
+          </div>
+
+          <div class="product-info">
+            <h1>Áo Polo</h1>
+            <div class="price">700.000 đ</div>
+            <p>
+              Louis Vuitton sử dụng các loại vải như cotton 100% hoặc vải pha
+              cao cấp, giúp áo thoáng mát và mềm mại trên da. Chất liệu này còn
+              bền bỉ, giữ được form và màu sắc lâu dài sau nhiều lần giặt.
+            </p>
+            <br />
+            <p>
+              Áo polo LV mang phong cách đơn giản nhưng vẫn rất nổi bật với các
+              chi tiết logo LV tinh tế hoặc họa tiết monogram nổi tiếng. Áo
+              thường có nhiều phiên bản từ trơn, tối giản đến các mẫu thiết kế
+              kết hợp họa tiết độc quyền, giúp người mặc thể hiện phong cách
+              riêng.
+            </p>
+            <br />
+            <!-- Chọn kích thước và màu sắc -->
+            <div class="product-options">
+              <div class="size-options">
+                <label>Size:</label>
+                <button class="size-option" onclick="selectSize('L')">L</button>
+                <button class="size-option" onclick="selectSize('XL')">
+                  XL
+                </button>
+                <button class="size-option" onclick="selectSize('XS')">
+                  XXL
+                </button>
+              </div>
+              <br />
+
+              <div class="color-options">
+                <label>Color:</label>
+                <button
+                  class="color-option black"
+                  onclick="selectColor('Red')"
+                ></button>
+                <button
+                  class="color-option purple"
+                  onclick="selectColor('White')"
+                ></button>
+                <button
+                  class="color-option gold"
+                  onclick="selectColor('Gold')"
+                ></button>
+              </div>
+            </div>
+            <div class="product-actions">
+              <label>Số Lượng:</label>
+              <div class="quantity-input">
+                <button class="minus-btn">-</button>
+                <input type="text" value="1" min="1" id="quantity" />
+                <button class="plus-btn">+</button>
+              </div>
+
+              <div class="button-group">
+                <button id="buy-now">
+                  <i class="fas fa-shopping-cart"></i> Mua hàng
+                </button>
+                <button id="add-to-cart">
+                  <i class="fas fa-cart-plus"></i> Thêm giỏ hàng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Description Section -->
+    <div class="product-middle">
+      <!-- Tab Menu -->
+      <div class="tabs">
+        <ul>
+          <li class="active">Các sản phẩm phẩm bộ</li>
+          >
+        </ul>
+      </div>
+
+      <!-- Description Section -->
+      <div class="description">
+        <p>
+          Bộ quần áo này là lựa chọn tuyệt vời cho những ai yêu thích phong cách
+          thể thao, đặc biệt là fan của Michael Jordan và thương hiệu Jordan.
+          Thiết kế đơn giản nhưng mang đậm cá tính giúp bộ đồ vừa có tính ứng
+          dụng cao, vừa thể hiện phong cách riêng của người mặc.
+        </p>
+        <br />
+        <p>
+          Đây là bộ đồ lý tưởng cho các hoạt động thể thao hoặc mặc thường ngày
+          khi bạn muốn có phong cách nổi bật và thoải mái. Màu sắc hiện đại và
+          chất liệu thoáng mát mang lại trải nghiệm tốt cho người mặc, đặc biệt
+          là những ai yêu thích phong cách năng động và thời trang thể thao.
+        </p>
+      </div>
+
+      <!-- Product Images (in a row) -->
+      <div class="product-images">
+        <img src="../anh/b1.jpg" alt="Product 1" />
+        <img src="../anh/b2.jpg" alt="Product 2" />
+        <img src="../anh/b3.jpg" alt="Product 3" />
+        <img src="../anh/b4.jpg" alt="Product 4" />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <hr />
+      <div class="footer-container">
+        <div class="footer-item">
+          <h5>Shop AE Boutique</h5>
+          <h6>
+            Shop AE Boutique chuyên buôn, sỉ, lẻ, order hàng thời trang, giá tốt
+            nhất thị trường. Nơi mua sắm mới nhất cho những khách hàng yêu quý.
+          </h6>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/aeboutique69"
+              ><img src="../anh/fb.png" alt="Facebook"
+            /></a>
+            <a href="#"><img src="../anh/youtube.png" alt="YouTube" /></a>
+          </div>
+        </div>
+
+        <div class="footer-item">
+          <h5>Liên kết nhanh</h5>
+          <ul>
+            <li><a href="#">Hướng dẫn đặt hàng</a></li>
+            <li><a href="#">Hướng dẫn thanh toán</a></li>
+            <li><a href="#">Chính sách đổi trả hàng</a></li>
+            <li><a href="#">Liên hệ với chúng tôi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h5>Hotline hỗ trợ 24/7</h5>
+          <div class="hotline">
+            <span>0975986096</span>
+          </div>
+          <h5>Chấp nhận thanh toán</h5>
+          <div class="payment-icons">
+            <img src="../anh/momo.png" alt="Momo" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="chitiet.js"></script>
+  </body>
+</html>
