@@ -1,6 +1,22 @@
 {
   "users": [],
   "products": [],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Asgaard sofa",
+      "price": "25.000.000đ",
+      "image": "sofa.jpg",
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Modern chair",
+      "price": "10.000.000đ",
+      "image": "chair.jpg",
+      "quantity": 1
+    }
+  ],
   "orders": [
     {
       "id": "1",
