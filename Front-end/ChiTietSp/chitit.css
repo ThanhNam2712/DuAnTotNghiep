@@ -294,6 +294,7 @@ body {
 }
 
 #buy-now {
+  text-decoration: none;
   background-color: #ff9900;
   border: none;
   color: white;
@@ -310,6 +311,7 @@ body {
 }
 
 #add-to-cart {
+  text-decoration: none;
   background-color: white;
   border: 2px solid #333;
   color: #333;
@@ -478,14 +480,18 @@ body {
   background-color: #ff5e5e;
 }
 
-#loadMore {
+.loadMore {
+  text-decoration: none;
   display: block;
+  padding: 5px;
+  width: 150px;
+  height: 35px;
   margin: 20px auto;
-  padding: 10px 60px;
   color: rgb(0, 0, 0);
   border: 2px solid black;
   cursor: pointer;
+  border-radius: 15px;
 }
-#loadMore:hover {
+.loadMore:hover {
   background-color: #c5c2c2;
 }

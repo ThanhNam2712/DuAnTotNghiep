@@ -2,7 +2,7 @@
 document.querySelectorAll(".thumbnail").forEach((item) => {
   item.addEventListener("click", function () {
     const mainImage = document.getElementById("main-product-image");
-    mainImage.src = this.src; // Thay đổi ảnh chính thành ảnh của thumbnail được click
+    mainImage.src = this.src;
   });
 });
 
