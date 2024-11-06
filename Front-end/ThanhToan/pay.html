@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanh Toán Đơn Hàng</title>
+  <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="#">Trang chủ</a> / <a href="#">Thanh toán đơn hàng</a>
+    </div>
+    
+    <h1>THANH TOÁN ĐƠN HÀNG</h1>
+    
+   
+    
+    <div class="checkout-form">
+      <div class="left-section">
+        <h2>Thanh toán và giao hàng</h2>
+        <div class="checkout-form">
+            
+          
+            <!-- City Selection -->
+            <label for="city">Chọn Tỉnh/Thành phố:</label>
+            <select id="city" onchange="populateDistricts()">
+              <option value="">Chọn Tỉnh/Thành phố</option>
+              <option value="Hà Nội">Hà Nội</option>
+              <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+              <!-- Add more cities as needed -->
+            </select>
+          
+            <!-- District Selection -->
+            <label for="district">Chọn Quận/Huyện:</label>
+            <select id="district" onchange="populateWards()">
+              <option value="">Chọn Quận/Huyện</option>
+            </select>
+          
+            <!-- Ward Selection -->
+            <label for="ward">Chọn Xã/Phường/Thị trấn:</label>
+            <select id="ward">
+              <option value="">Chọn Xã/Phường/Thị trấn</option>
+            </select>
+            <label for="house-number">Số nhà:</label>
+      <input type="text" id="house-number" placeholder="Nhập số nhà">
+
+          </div>
+          
+
+        <h2>Thông tin bổ sung</h2>
+        <textarea placeholder="Ghi chú đơn hàng..."></textarea>
+
+        <h2>Thanh toán</h2>
+        <label><input type="radio" name="payment" checked> Trả tiền mặt khi nhận hàng (COD)</label><br>
+        <label><input type="radio" name="payment"> Chuyển khoản ngân hàng</label>
+
+        <p class="note">
+          Thông tin cá nhân sẽ được sử dụng để xử lý đơn hàng, tăng trải nghiệm sử dụng website.
+        </p>
+
+        <button class="checkout-button">Đặt hàng</button>
+      </div>
+
+      <div class="right-section">
+        <h2>Đơn hàng của bạn</h2>
+        <table>
+          <tr>
+            <td>Sản phẩm</td>
+            <td>Tạm tính</td>
+          </tr>
+          <tr>
+            <td>Quần Nỉ Dài Dior Đen Logo CD Trắng - 34 × 1</td>
+            <td>1.000.000₫</td>
+          </tr>
+          <tr>
+            <td>Tạm tính</td>
+            <td>1.000.000₫</td>
+          </tr>
+          <tr>
+            <td><strong>Tổng</strong></td>
+            <td><strong>1.000.000₫</strong></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="pay.js"></script>
+</body>
+</html>

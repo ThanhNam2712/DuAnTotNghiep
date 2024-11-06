@@ -1,26 +1,52 @@
-fetch("path/to/db.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const products = data.products;
-    const productContainer = document.getElementById("product-container");
+// Cập nhật số lượng và subtotal
+function updateQuantity(action, button) {
+  const row = button.closest('tr');
+  const quantityInput = row.querySelector('.quantity-input');
+  let quantity = parseInt(quantityInput.value);
+  const price = parseInt(row.querySelector('.price').getAttribute('data-price'));
 
-    products.forEach((product) => {
-      const productElement = `
-        <tr>
-          <td class="product-info">
-            <img src="${product.image}" alt="${product.name}">
-            <span class="product-name">${product.name}</span>
-          </td>
-          <td>${product.price}</td>
-          <td class="quantity-wrapper">
-            <button class="quantity-btn">-</button>
-            <input type="text" class="quantity-input" value="${product.quantity}" />
-            <button class="quantity-btn">+</button>
-          </td>
-          <td>${product.price}</td> <!-- Ví dụ đơn giản, bạn có thể tính tổng ở đây -->
-        </tr>
-      `;
-      productContainer.innerHTML += productElement;
-    });
-  })
-  .catch((error) => console.error("Error fetching data:", error));
+  if (action === 'increase') {
+    quantity++;
+  } else if (action === 'decrease' && quantity > 1) {
+    quantity--;
+  }
+
+  quantityInput.value = quantity;
+
+  // Cập nhật subtotal
+  const subtotal = row.querySelector('.subtotal');
+  subtotal.textContent = formatCurrency(price * quantity);
+
+  // Cập nhật tổng tiền
+  updateTotal();
+}
+
+// Tính toán tổng giỏ hàng
+function updateTotal() {
+  const rows = document.querySelectorAll('.cart-item');
+  let total = 0;
+
+  rows.forEach(row => {
+    const subtotal = parseInt(row.querySelector('.subtotal').textContent.replace(/\D/g, ''));
+    total += subtotal;
+  });
+
+  document.getElementById('total').textContent = formatCurrency(total);
+}
+
+// Định dạng tiền tệ
+function formatCurrency(value) {
+  return value.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' });
+}
+
+// Xóa sản phẩm khỏi giỏ hàng
+function removeItem(button) {
+  const row = button.closest('tr');
+  row.remove();
+
+  // Cập nhật lại tổng sau khi xóa sản phẩm
+  updateTotal();
+}
+
+// Khởi động tổng giỏ hàng khi trang được tải
+document.addEventListener('DOMContentLoaded', updateTotal);
