@@ -1,7 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Tạo phần Header
   const header = document.createElement("header");
-
+  header.innerHTML = `
+    <div class="logo">
+      <a href="../Home/Home.html">
+        <img src="../../anh/logo.png" alt="Logo" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="../../Home/Home.html">Trang chủ</a></li>
+        <li><a href="../../gioithieu/gioithieu.html">Giới thiệu</a></li>
+        <li><a href="../../lienhe/lienhe.html">Liên hệ</a></li>
+        <li class="dropdown">
+          <a href="#">Bộ sưu tập</a>
+          <ul class="dropdown-menu">
+            <li><a href="../polo/polo.html">Áo polo</a></li>
+            <li><a href="../phong/phong.html">Áo phông</a></li>
+            <li><a href="../quanaobo/quanaobo.html">Quần áo bộ</a></li>
+            <li><a href="../somi/somi.html">Sơ mi</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-icons">
+      <form id="searchForm" onsubmit="return searchProduct()" style="display: flex; align-items: center; gap: 10px; border: 1px solid #ddd; padding: 8px; border-radius: 5px;">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." style="border: none; outline: none" />
+        <button type="submit" style="background: none; border: none; cursor: pointer">🔍</button>
+        <a href="../../Register/register.html" style="display: flex; align-items: center; justify-content: center">
+          <svg width="24" height="24" fill="#007bff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.86 0-7 3.14-7 7 0 .553.447 1 1 1h12c.553 0 1-.447 1-1 0-3.86-3.14-7-7-7z" />
+          </svg>
+        </a>
+        <a href="../../DonHang/donhang.html" style="display: flex; align-items: center; justify-content: center">
+          <svg width="24" height="24" fill="#007bff" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 18c-1.104 0-2 .897-2 2s.896 2 2 2 2-.897 2-2-.896-2-2-2zm10 0c-1.104 0-2 .897-2 2s.896 2 2 2 2-.897 2-2-.896-2-2-2zM7 6h13c.553 0 1 .447 1 1s-.447 1-1 1h-1.333l-1.085 4.86c-.168.754-.855 1.285-1.625 1.285h-5.358c-.77 0-1.457-.531-1.625-1.285L5.333 8H4C3.447 8 3 7.553 3 7s.447-1 1-1h3c.48 0 .897.34.98.807L7 6zm0 0z" />
+          </svg>
+        </a>
+      </form>
+    </div>
+  `;
   const logoDiv = document.createElement("div");
   logoDiv.classList.add("logo");
   const logoLink = document.createElement("a");
@@ -15,11 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const nav = document.createElement("nav");
   const navList = document.createElement("ul");
 
-  const navItems = [
-    { href: "../../Home/Home.html", text: "Trang chủ" },
-    { href: "../../gioithieu/gioithieu.html", text: "Giới thiệu" },
-    { href: "../../lienhe/lienhe.html", text: "Liên hệ" },
-  ];
+  const navItems = [];
 
   navItems.forEach((item) => {
     const li = document.createElement("li");
@@ -29,65 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
     li.appendChild(a);
     navList.appendChild(li);
   });
-
-  // Tạo dropdown cho bộ sưu tập
-  const dropdown = document.createElement("li");
-  dropdown.classList.add("dropdown");
-  const dropdownLink = document.createElement("a");
-  dropdownLink.href = "#";
-  dropdownLink.textContent = "Bộ sưu tập";
-  dropdown.appendChild(dropdownLink);
-
-  const dropdownMenu = document.createElement("ul");
-  dropdownMenu.classList.add("dropdown-menu");
-
-  const dropdownItems = [
-    { href: "../polo/polo.html", text: "Áo polo" },
-    { href: "../phong/phong.html", text: "Áo phông" },
-    { href: "../quanaobo/quanaobo.html", text: "Quần áo bộ" },
-    { href: "somi.html", text: "Áo sơ mi" },
-  ];
-
-  dropdownItems.forEach((item) => {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    a.href = item.href;
-    a.textContent = item.text;
-    li.appendChild(a);
-    dropdownMenu.appendChild(li);
-  });
-
-  dropdown.appendChild(dropdownMenu);
-  navList.appendChild(dropdown);
-
-  nav.appendChild(navList);
-
-  const headerIconsDiv = document.createElement("div");
-  headerIconsDiv.classList.add("header-icons");
-
-  const searchIcon = createIconLink(
-    "../../Home/timkiem.html",
-    "../../anh/searcher.jpg",
-    "Search"
-  );
-  const userIcon = createIconLink(
-    "../../Register/register.html",
-    "../../anh/user.jpg",
-    "User"
-  );
-  const cartIcon = createIconLink(
-    "../../DonHang/donhang.html",
-    "../../anh/cart.png",
-    "Cart"
-  );
-
-  headerIconsDiv.appendChild(searchIcon);
-  headerIconsDiv.appendChild(userIcon);
-  headerIconsDiv.appendChild(cartIcon);
-
-  header.appendChild(logoDiv);
-  header.appendChild(nav);
-  header.appendChild(headerIconsDiv);
 
   // Thêm header vào body
   document.body.appendChild(header);
@@ -149,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
   newProductsSection.classList.add("new-products");
 
   const productTitle = document.createElement("h3");
-  productTitle.textContent = "Áo Sơ Mi";
+  productTitle.textContent = "Áo Polo";
 
   const productHr = document.createElement("hr");
 
@@ -221,7 +196,9 @@ document.addEventListener("DOMContentLoaded", function () {
     cartImg.alt = "Giỏ hàng";
     cartImg.width = 20;
     cartImg.height = 20;
-
+    cartImg.addEventListener("click", function () {
+      window.location.href = "../../ChiTietSp/chitiet.html"; // Thay đường dẫn này bằng URL bạn muốn chuyển đến
+    });
     cartButton.appendChild(cartImg);
     iconsDiv.appendChild(cartButton);
     productImageDiv.appendChild(iconsDiv);
