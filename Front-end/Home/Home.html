@@ -30,9 +30,17 @@
     </ul>
   </nav>
   <div class="header-icons">
-    <a href="timkiem.html"><img src="../anh/searcher.jpg" alt="Search" /></a>
-    <a href="../Register/register.html"><img src="../anh/user.jpg" alt="User" /></a>
-    <a href="../DonHang/donhang.html"><img src="../anh/cart.png" alt="Cart" /></a>
+   
+    <form id="searchForm" onsubmit="return searchProduct()" style="display: flex; align-items: center; gap: 10px; border: 1px solid #ddd; padding: 8px; border-radius: 5px;">
+      <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." style="border: none; outline: none;" />
+      <button type="submit" style="background: none; border: none;">
+        🔍
+      </button>
+      <a href="../Register/register.html"><img src="../anh/user.jpg" alt="User" style="width: 24px; height: 24px;" /></a>
+      <a href="../DonHang/donhang.html"><img src="../anh/cart.png" alt="Cart" style="width: 24px; height: 24px;" /></a>
+    </form>
+    
+      
   </div>
 </header>
 
