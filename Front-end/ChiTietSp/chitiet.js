@@ -46,3 +46,10 @@ minusBtn.addEventListener("click", () => {
     quantityInput.value = currentValue - 1;
   }
 });
+document.getElementById('buy-now').addEventListener('click', function() {
+  window.location.href = '../ThanhToan/pay.html';  
+});
+
+document.getElementById('add-to-cart').addEventListener('click', function() {
+  window.location.href = '../Giohang/cart.html'; 
+});

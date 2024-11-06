@@ -13,6 +13,85 @@
       "password": "111111"
     }
   ],
+  "cards": [
+    {
+      "id": "1a25",
+      "cardName": "Lê Thành Nam",
+      "cardNumber": "111 111 111 1111",
+      "expiryDate": "11/24",
+      "cvv": "112"
+    },
+    {
+      "id": "6967",
+      "cardName": "opio[poip[",
+      "cardNumber": "111",
+      "expiryDate": "111",
+      "cvv": "111"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "customerName": "Do Dinh Canh",
+      "phoneNumber": "0974468416",
+      "email": "huybuong219@gmail.com",
+      "address": "Ha Noi",
+      "productName": "Áo Polo",
+      "totalPrice": "100.000.000",
+      "status": "Hủy",
+      "orderDate": "18/10/2024"
+    },
+    {
+      "id": "2",
+      "customerName": "Do Dinh Canh 2",
+      "phoneNumber": "0987654321",
+      "address": "Ha Noi",
+      "productName": "Áo Phông",
+      "totalPrice": "200.000.000",
+      "status": "Đã Xác nhận",
+      "orderDate": "18/10/2024"
+    },
+    {
+      "id": "3",
+      "customerName": "Do Dinh Canh 3",
+      "phoneNumber": "0987654321",
+      "address": "Ha Noi",
+      "productName": "Áo Phông",
+      "totalPrice": "300.000.000",
+      "status": "Hủy",
+      "orderDate": "18/10/2024"
+    },
+    {
+      "id": "4",
+      "customerName": "Huy Bương",
+      "phoneNumber": "0987654321",
+      "address": "Ha Noi",
+      "productName": "Áo Phông",
+      "totalPrice": "300.000.000",
+      "status": "Chờ xác nhận",
+      "orderDate": "18/10/2024"
+    },
+    {
+      "id": "5",
+      "customerName": "Nguyễn Quang Huy",
+      "phoneNumber": "0975986096",
+      "address": "Ha Noi",
+      "productName": "Áo Sơ mi",
+      "totalPrice": "300.000",
+      "status": "Thành công",
+      "orderDate": "18/10/2024"
+    },
+    {
+      "id": "6",
+      "customerName": "Huy Ank",
+      "phoneNumber": "0987654321",
+      "address": "Ha Noi",
+      "productName": "Áo Sơ mi",
+      "totalPrice": "300.000.000",
+      "status": "Chờ xác nhận",
+      "orderDate": "18/10/2024"
+    }
+  ],
   "products": [
     {
       "name": "Áo Polo LV trắng LikeAuth",
@@ -181,69 +260,6 @@
       "image": "s8.jpg",
       "description": "Áo Sơ mi DG chất lượng cao",
       "id": "21"
-    }
-  ],
-  "orders": [
-    {
-      "id": "1",
-      "customerName": "Do Dinh Canh",
-      "phoneNumber": "0974468416",
-      "email": "huybuong219@gmail.com",
-      "address": "Ha Noi",
-      "productName": "Áo Polo",
-      "totalPrice": "100.000.000",
-      "status": "Hủy",
-      "orderDate": "18/10/2024"
-    },
-    {
-      "id": "2",
-      "customerName": "Do Dinh Canh 2",
-      "phoneNumber": "0987654321",
-      "address": "Ha Noi",
-      "productName": "Áo Phông",
-      "totalPrice": "200.000.000",
-      "status": "Đã Xác nhận",
-      "orderDate": "18/10/2024"
-    },
-    {
-      "id": "3",
-      "customerName": "Do Dinh Canh 3",
-      "phoneNumber": "0987654321",
-      "address": "Ha Noi",
-      "productName": "Áo Phông",
-      "totalPrice": "300.000.000",
-      "status": "Hủy",
-      "orderDate": "18/10/2024"
-    },
-    {
-      "id": "4",
-      "customerName": "Huy Bương",
-      "phoneNumber": "0987654321",
-      "address": "Ha Noi",
-      "productName": "Áo Phông",
-      "totalPrice": "300.000.000",
-      "status": "Chờ xác nhận",
-      "orderDate": "18/10/2024"
-    },
-    {
-      "id": "5",
-      "customerName": "Nguyễn Quang Huy",
-      "phoneNumber": "0975986096",
-      "address": "Ha Noi",
-      "productName": "Áo Sơ mi",
-      "totalPrice": "300.000",
-      "status": "Thành công",
-      "orderDate": "18/10/2024"
-    },
-    {
-      "id": "6",
-      "customerName": "Huy Ank",
-      "phoneNumber": "0987654321",
-      "address": "Ha Noi",
-      "productName": "Áo Sơ mi",
-      "totalPrice": "300.000.000",
-      "status": "Chờ xác nhận",
-      "orderDate": "18/10/2024"
     }
   ]
 }

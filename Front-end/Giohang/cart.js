@@ -50,3 +50,32 @@ function removeItem(button) {
 
 // Khởi động tổng giỏ hàng khi trang được tải
 document.addEventListener('DOMContentLoaded', updateTotal);
+// Hàm lấy dữ liệu giỏ hàng
+function saveCartData() {
+  const cartItems = document.querySelectorAll('.cart-item');
+  const cartData = [];
+
+  cartItems.forEach(item => {
+    const productName = item.querySelector('.product-name').textContent;
+    const productPrice = parseInt(item.querySelector('.price').dataset.price);
+    const quantity = item.querySelector('.quantity-input').value;
+    const subtotal = productPrice * quantity;
+
+    cartData.push({
+      name: productName,
+      price: productPrice,
+      quantity: quantity,
+      subtotal: subtotal
+    });
+  });
+
+  // Lưu giỏ hàng vào localStorage
+  localStorage.setItem('cartData', JSON.stringify(cartData));
+
+  // Tính tổng giỏ hàng
+  const total = cartData.reduce((sum, item) => sum + item.subtotal, 0);
+  localStorage.setItem('cartTotal', total);
+}
+
+// Gọi hàm khi nhấn thanh toán
+document.querySelector('.checkout-btn a').addEventListener('click', saveCartData);
