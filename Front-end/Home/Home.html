@@ -32,7 +32,7 @@
   <!-- Phần tìm kiếm, đăng ký, giỏ hàng nha các bé -->
   <div class="header-icons">
    
-    <form id="searchForm" onsubmit="return searchProduct()" style="display: flex; align-items: center; gap: 10px; border: 1px solid #ddd; padding: 8px; border-radius: 5px;">
+    <form id="searchForm" style="display: flex; align-items: center; gap: 10px; border: 1px solid #ddd; padding: 8px; border-radius: 5px;">
       <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." style="border: none; outline: none;" />
 
       <button type="submit" style="background: none; border: none; cursor: pointer;">
@@ -53,7 +53,7 @@
 </header>
 
 
-    <!-- Main Banner -->
+    <!-- Slide show -->
     <section class="banner">
       <div class="banner-container">
         <div class="banner-slide">
@@ -88,182 +88,583 @@
         </div>
       </div>
       <div class="banner-controls">
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
       </div>
     </section>
 
-    <!-- New Products Section -->
+    <!-- Sản phẩm mới -->
       <section class="new-products">
     <h3>Sản Phẩm Mới</h3>
     <hr>
     <div class="product-container">
-      <!-- Sản phẩm 1 -->
-<div class="product-card">
-    <div class="product-image" id="product-image-1"></div>
-    <div class="product-details" id="product-details-1"></div>  
+   <!-- Product 1 -->
+   <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Áo</p>
+       
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+         <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
-<!-- Sản phẩm 2 -->
+
+<!-- Product 2 -->
 <div class="product-card">
-    <div class="product-image" id="product-image-2"></div>
-    <div class="product-details" id="product-details-2"></div>
-     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                        <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
-<!-- Sản phẩm 1 -->
-<div class="product-card">
-    <div class="product-image" id="product-image-3"></div>
-    <div class="product-details" id="product-details-3"></div>
-     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+  <!-- Product 1 -->
+  <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+       
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+         <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
-<!-- Sản phẩm 2 -->
+
+<!-- Product 2 -->
 <div class="product-card">
-    <div class="product-image" id="product-image-4"></div>
-    <div class="product-details" id="product-details-4"></div>
-     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                        <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
     </div>
 </section>
-
       </section>
 
-    <!-- Store Section -->
+    <!-- Cửa hàng -->
     <section class="store">
       <h3>Cửa Hàng</h3>
       <hr>
-      <div class="store-grid">
-        <div class="product-card">
-    <div class="product-image" id="product-image-5"></div>
-    <div class="product-details" id="product-details-5"></div>  
+      <div class="product-container">
+         <!-- Product 1 -->
+  <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
- <div class="product-card">
-    <div class="product-image" id="product-image-6"></div>
-    <div class="product-details" id="product-details-6"></div>  
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
- <div class="product-card">
-    <div class="product-image" id="product-image-7"></div>
-    <div class="product-details" id="product-details-7"></div>  
+  <!-- Product 1 -->
+  <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
- <div class="product-card">
-    <div class="product-image" id="product-image-8"></div>
-    <div class="product-details" id="product-details-8"></div>  
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+       
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+         <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
+      </div>
     </section>
 
+    <!-- Sản phẩm nổi bật -->
     <section class="new-products">
   <h3>Sản Phẩm Nổi Bật</h3>
   <hr>
-  <div class="product-grid">
-    <!-- Sản phẩm 1 -->
-     <div class="product-card">
-    <div class="product-image" id="product-image-9"></div>
-    <div class="product-details" id="product-details-9"></div>  
+  <div class="product-container">
+       <!-- Product 1 -->
+  <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
-     <div class="product-card">
-    <div class="product-image" id="product-image-10"></div>
-    <div class="product-details" id="product-details-10"></div>  
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
-     <div class="product-card">
-    <div class="product-image" id="product-image-11"></div>
-    <div class="product-details" id="product-details-11"></div>  
+  <!-- Product 1 -->
+  <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+       
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+         <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
+</div>
+   <!-- Product 1 -->
    <div class="product-card">
-    <div class="product-image" id="product-image-12"></div>
-    <div class="product-details" id="product-details-12"></div>  
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
-    <div class="product-card">
-    <div class="product-image" id="product-image-13"></div>
-    <div class="product-details" id="product-details-13"></div>  
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
-     <div class="product-card">
-    <div class="product-image" id="product-image-14"></div>
-    <div class="product-details" id="product-details-14"></div>  
+  <!-- Product 1 -->
+  <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
-     <div class="product-card">
-    <div class="product-image" id="product-image-15"></div>
-    <div class="product-details" id="product-details-15"></div>  
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+       
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+         <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
     <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
 </div>
-    <div class="product-card">
-    <div class="product-image" id="product-image-16"></div>
-    <div class="product-details" id="product-details-16"></div>  
-    <div class="icons">
-                    <button class="cart-icon" onclick="addToCart('Áo Gucci màu kem kẻ cánh tay', 1950000)">
-                       <a href="../ChiTietSp/chitiet.html"> <img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
-                    </button>
-                </div>
 </div>
     
+</section>
+
+<!-- Áo thời trang -->
+<section class="new-products">
+  <h3>Áo Polo thời trang</h3>
+  <hr>
+  <div class="product-container">
+       <!-- Product 1 -->
+  <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
+</div>
+  <!-- Product 1 -->
+  <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+       
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+         <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
+</div>
+   <!-- Product 1 -->
+   <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
+</div>
+  <!-- Product 1 -->
+  <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+       
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+         <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+        </button>
+    </div>
+</div>
+</div>
     
 </section>
 
