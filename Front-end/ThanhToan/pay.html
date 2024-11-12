@@ -6,6 +6,10 @@
     <title>AE Boutique</title>
     <link rel="stylesheet" href="pay.css" />
     <link rel="stylesheet" href="../Home/Home.css" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -91,68 +95,83 @@
     </header>
 
     <div class="container">
-      <div class="checkout-form">
-        <div class="left-section">
-          <h2>Thanh toán và giao hàng</h2>
+      <div class="row">
+        <div class="col-md-7">
           <div class="checkout-form">
-            <label for="city">Chọn Tỉnh/Thành phố:</label>
-            <select id="city">
-              <option value="">Chọn Tỉnh/Thành phố</option>
-              <option value="Hà Nội">Hà Nội</option>
-              <option value="Hồ Chí Minh">Hồ Chí Minh</option>
-            </select>
-
-            <label for="district">Chọn Quận/Huyện:</label>
-            <select id="district">
-              <option value="">Chọn Quận/Huyện</option>
-            </select>
-
-            <label for="ward">Chọn Xã/Phường/Thị trấn:</label>
-            <select id="ward">
-              <option value="">Chọn Xã/Phường/Thị trấn</option>
-            </select>
-            <label for="house-number">Số nhà:</label>
-            <input type="text" id="house-number" placeholder="Nhập số nhà" />
+            <h2>Thanh toán và giao hàng</h2>
+            <form>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="ward">Chọn Xã/Phường/Thị trấn:</label>
+                  <select class="form-control" id="ward">
+                    <option value="">Chọn Xã/Phường/Thị trấn</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="district">Chọn Quận/Huyện:</label>
+                  <select class="form-control" id="district">
+                    <option value="">Chọn Quận/Huyện</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <label for="house-number">Số nhà:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="house-number"
+                    placeholder="Nhập số nhà"
+                  />
+                </div>
+              </div>
+              <div class="form-group full-width">
+                <label for="notes">Thông tin bổ sung:</label>
+                <textarea
+                  class="form-control"
+                  id="notes"
+                  placeholder="Ghi chú đơn hàng..."
+                ></textarea>
+              </div>
+              <div class="form-group full-width">
+                <label>Thanh toán:</label><br />
+                <input
+                  type="radio"
+                  name="payment"
+                  value="Chuyển khoản ngân hàng"
+                />
+                Chuyển khoản ngân hàng
+              </div>
+              <button type="button" class="btn btn-primary checkout-button">
+                Đặt hàng
+              </button>
+            </form>
           </div>
-
-          <h2>Thông tin bổ sung</h2>
-          <textarea placeholder="Ghi chú đơn hàng..."></textarea>
-
-          <h2>Thanh toán</h2>
-
-          <label
-            ><input
-              type="radio"
-              name="payment"
-              value="Chuyển khoản ngân hàng"
-            />
-            Chuyển khoản ngân hàng</label
-          >
-
-          <p class="note">
-            Thông tin cá nhân sẽ được sử dụng để xử lý đơn hàng, tăng trải
-            nghiệm sử dụng website.
-          </p>
-          <button class="checkout-button" type="button">
-            <a href="../ThanhToanOnl/cart.html">Đặt hàng</a>
-          </button>
         </div>
-
-        <div class="right-section">
-          <h2>Đơn hàng của bạn</h2>
-          <table id="order-summary">
-            <tr>
-              <td>Sản phẩm</td>
-              <td>Tạm tính</td>
-            </tr>
-            <!-- Các dòng sản phẩm sẽ được thêm vào đây bằng JavaScript -->
-          </table>
-          <div id="cart-total">
-            <strong>Tổng</strong>: <span id="total-price"></span>
+        <div class="col-md-5">
+          <div class="right-section">
+            <h2>Đơn hàng của bạn</h2>
+            <table class="table" id="order-summary">
+              <thead>
+                <tr>
+                  <th>Sản phẩm</th>
+                  <th>Tạm tính</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Các dòng sản phẩm sẽ được thêm vào đây bằng JavaScript -->
+              </tbody>
+            </table>
+            <div id="cart-total">
+              <strong>Tổng</strong>: <span id="total-price"></span>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Footer -->
     <footer>
       <hr />
@@ -193,6 +212,8 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="pay.js"></script>
   </body>
 </html>
