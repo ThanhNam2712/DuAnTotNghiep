@@ -69,26 +69,47 @@ fetch("../../db.json")
     });
   })
   .catch((error) => console.error("Error fetching product data:", error));
-  function searchProduct() {
-    // Lấy từ khóa tìm kiếm từ input
-    const keyword = document.getElementById("searchInput").value.toLowerCase();
-  
-    // Lấy danh sách sản phẩm
-    const products = document.querySelectorAll(".product-card");
-    
-    // Duyệt qua từng sản phẩm và kiểm tra tên sản phẩm
-    products.forEach(product => {
-      const productName = product.querySelector(".product-details").textContent.toLowerCase();
-  
-      // Hiển thị hoặc ẩn sản phẩm tùy vào kết quả tìm kiếm
-      if (productName.includes(keyword)) {
-        product.style.display = "block"; // Hiển thị sản phẩm
-      } else {
-        product.style.display = "none"; // Ẩn sản phẩm
-      }
-    });
-  
-    // Ngăn không cho form reload trang
-    return false;
+function searchProduct() {
+  // Lấy từ khóa tìm kiếm từ input
+  const keyword = document.getElementById("searchInput").value.toLowerCase();
+
+  // Lấy danh sách sản phẩm
+  const products = document.querySelectorAll(".product-card");
+
+  // Duyệt qua từng sản phẩm và kiểm tra tên sản phẩm
+  products.forEach((product) => {
+    const productName = product
+      .querySelector(".product-details")
+      .textContent.toLowerCase();
+
+    // Hiển thị hoặc ẩn sản phẩm tùy vào kết quả tìm kiếm
+    if (productName.includes(keyword)) {
+      product.style.display = "block"; // Hiển thị sản phẩm
+    } else {
+      product.style.display = "none"; // Ẩn sản phẩm
+    }
+  });
+
+  // Ngăn không cho form reload trang
+  return false;
+}
+
+function openModal() {
+  document.getElementById("productModal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("productModal").style.display = "none";
+}
+
+function increaseQuantity() {
+  const quantityInput = document.getElementById("quantity");
+  quantityInput.value = parseInt(quantityInput.value) + 1;
+}
+
+function decreaseQuantity() {
+  const quantityInput = document.getElementById("quantity");
+  if (parseInt(quantityInput.value) > 1) {
+    quantityInput.value = parseInt(quantityInput.value) - 1;
   }
-  
+}

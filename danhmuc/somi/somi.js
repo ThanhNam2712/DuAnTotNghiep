@@ -341,3 +341,8 @@ function addToCart(productName, price) {
     `Sản phẩm: ${productName}, Giá: ${price} đã được thêm vào giỏ hàng`
   );
 }
+document.querySelectorAll(".quick-view").forEach((button) => {
+  button.addEventListener("click", () => {
+    alert("Hiển thị chi tiết sản phẩm!");
+  });
+});

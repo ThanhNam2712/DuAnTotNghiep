@@ -117,10 +117,94 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/2.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Áo</p>
+       
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+         <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
+        </button>
+    </div>
+</div>
+<!-- View lên xem chi tiết sản phẩm -->
+<div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-left">
+          <img src="../anh/2.1.jpg" alt="Product Image" />
+        </div>
+        <div class="modal-right">
+          <h2>Áo Khoác DSQ Đen Ngực Chữ Trắng</h2>
+          <p>Mã: N/A</p>
+          <p>Danh mục: Áo Khoác Phao + Gió</p>
+          <p><del>1.000.000₫</del> <strong>900.000₫</strong></p>
+          <label for="size">Chọn Size:</label>
+<select id="size" name="size">
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+    <option value="XS">XS</option>
+</select>
 
+          
+          <div class="quantity">
+            <button onclick="decreaseQuantity()">-</button>
+            <input type="number" id="quantity" value="1" min="1" />
+            <button onclick="increaseQuantity()">+</button>
+          </div>
+          <a href="../Giohang/cart.html" class="link-button">
+    <button class="add-to-cart">Thêm vào giỏ</button>
+</a>
+
+          <ul class="policy">
+            <label>
+  <input type="checkbox" checked>
+  Miễn phí vận chuyển đơn 0đ
+</label>
+<br>
+            <label>
+  <input type="checkbox" checked>
+  Đa dạng hình thức thanh toán
+</label><br>
+<label>
+  <input type="checkbox" checked>
+  Giao hàng nhanh: Chỉ từ 2-5 ngày
+</label> <br>
+<label>
+  <input type="checkbox" checked>
+  Miễn phí ĐỔI, TRẢ trong 15 ngày tại cửa hàng
+</label>
+
+          </ul>
+        </div>
+      </div>
+    </div>
 <!-- Product 2 -->
 <div class="product-card">
     <div class="product-image" id="product-image-1">
@@ -140,6 +224,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -162,6 +252,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -185,12 +281,24 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
     </div>
 </section>
       </section>
+      <br>
+      <div class="position-container">
+    <a href="../danhmuc/sanpham/sanpham.html" class="link-button">
+        <button class="center-button">Xem thêm sản phẩm →</button>
+    </a>
+</div>
 
     <!-- Cửa hàng -->
     <section class="store">
@@ -198,6 +306,33 @@
       <hr>
       <div class="product-container">
          <!-- Product 1 -->
+          <div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Áo</p>
+       
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+         <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
+        </button>
+    </div>
+</div>
   <div class="product-card">
     <div class="product-image" id="product-image-1">
       <img src="../anh/1.1.jpg" alt="">
@@ -216,6 +351,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -239,6 +380,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -261,6 +408,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -284,18 +437,30 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
       </div>
     </section>
-
+<div class="position-container">
+    <a href="../danhmuc/sanpham/sanpham.html" class="link-button">
+        <button class="center-button">Xem thêm sản phẩm →</button>
+    </a>
+</div>
     <!-- Sản phẩm nổi bật -->
     <section class="new-products">
+      <br> <br> <br>
   <h3>Sản Phẩm Nổi Bật</h3>
   <hr>
   <div class="product-container">
        <!-- Product 1 -->
+        
   <div class="product-card">
     <div class="product-image" id="product-image-1">
       <img src="../anh/1.1.jpg" alt="">
@@ -314,10 +479,42 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
-
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
+        </button>
+    </div>
+</div>
 <!-- Product 2 -->
 <div class="product-card">
     <div class="product-image" id="product-image-1">
@@ -337,6 +534,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -359,6 +562,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -382,6 +591,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -404,6 +619,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -427,6 +648,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -449,11 +676,42 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
-<!-- 12/11 -->
-
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
+        </button>
+    </div>
+</div>
 <!-- Product 2 -->
 <div class="product-card">
     <div class="product-image" id="product-image-1">
@@ -473,15 +731,26 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
 </div>
     
 </section>
-
+<div class="position-container">
+    <a href="../danhmuc/sanpham/sanpham.html" class="link-button">
+        <button class="center-button">Xem thêm sản phẩm →</button>
+    </a>
+</div>
 <!-- Áo thời trang -->
 <section class="new-products">
+  <br><br><br>
   <h3>Áo Polo thời trang</h3>
   <hr>
   <div class="product-container">
@@ -504,10 +773,42 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
-
+<div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Xanh Đen Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
+        </button>
+    </div>
+</div>
 <!-- Product 2 -->
 <div class="product-card">
     <div class="product-image" id="product-image-1">
@@ -527,6 +828,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -549,6 +856,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -572,10 +885,42 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
-   <!-- Product 1 -->
+   <!-- Product 1 --><div class="product-card">
+    <div class="product-image" id="product-image-1">
+      <img src="../anh/1.1.jpg" alt="">
+    </div>
+    <div class="product-details">
+        <p class="product-name">Quần Bò Dài LV Nâu Vân Caro Xuống To Likeauth</p>
+        
+        <div class="price">
+            <span class="old-price">1.600.000đ</span>
+            <span class="new-price">1.500.000đ</span>
+        </div>
+        <div class="star-rating">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+    </div>
+    <div class="icons">
+        <button class="cart-icon">
+            <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
+        </button>
+    </div>
+</div>
    <div class="product-card">
     <div class="product-image" id="product-image-1">
       <img src="../anh/1.1.jpg" alt="">
@@ -594,6 +939,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -617,6 +968,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -639,6 +996,12 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
@@ -662,13 +1025,23 @@
     <div class="icons">
         <button class="cart-icon">
             <a href="../ChiTietSp/chitiet.html"><img src="../anh/cart.png" alt="Giỏ hàng" width="20" height="20"></a>
+            <button class="view-button" onclick="openModal()"><div class="product-item">
+    <img src="../anh/view.png" alt="Sản phẩm" class="product-image">
+    
+</div></button>
+            <button onclick="openModal()"><div class="product-item">
+</div>
         </button>
     </div>
 </div>
 </div>
     
 </section>
-
+  <div class="position-container">
+    <a href="../danhmuc/sanpham/sanpham.html" class="link-button">
+        <button class="center-button">Xem thêm sản phẩm →</button>
+    </a>
+</div>
     <!-- Footer -->
     <footer>
       <hr>
