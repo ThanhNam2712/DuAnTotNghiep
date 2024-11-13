@@ -52,7 +52,6 @@
               placeholder="Tìm kiếm sản phẩm..."
               style="border: none; outline: none"
             />
-
             <button
               type="submit"
               style="background: none; border: none; cursor: pointer"
@@ -60,7 +59,7 @@
               🔍
             </button>
             <a
-              href="../../Register/register.html"
+              href="../Register/register.html"
               style="
                 display: flex;
                 align-items: center;
@@ -79,7 +78,7 @@
               </svg>
             </a>
             <a
-              href="../../Giohang/cart.html"
+              href="../Giohang/cart.html"
               style="
                 display: flex;
                 align-items: center;
@@ -97,11 +96,39 @@
                 />
               </svg>
             </a>
-            <a href="../../DonHang/donhang.html"
-              ><img src="../../anh/shopping.png" alt="" width="24" height="24"
+            <a href="../DonHang/donhang.html"
+              ><img src="../anh/shopping.png" alt="" width="24" height="24"
             /></a>
           </form>
         </div>
+
+        <script>
+          // Xử lý sự kiện khi người dùng submit form
+          document
+            .getElementById("searchForm")
+            .addEventListener("submit", function (event) {
+              event.preventDefault(); // Ngừng hành động mặc định của form
+
+              // Lấy giá trị từ input tìm kiếm
+              var searchQuery = document
+                .getElementById("searchInput")
+                .value.toLowerCase()
+                .trim();
+
+              // Kiểm tra giá trị nhập vào và chuyển hướng tới trang tương ứng
+              if (searchQuery.includes("áo phông")) {
+                window.location.href = "../danhmuc/phong/phong.html"; // Chuyển hướng đến trang áo phông
+              } else if (searchQuery.includes("áo polo")) {
+                window.location.href = "../danhmuc/polo/polo.html"; // Chuyển hướng đến trang áo polo
+              } else if (searchQuery.includes("quần áo bộ")) {
+                window.location.href = "../danhmuc/quanaobo/quanaobo.html"; // Chuyển hướng đến trang quần áo bộ
+              } else if (searchQuery.includes("áo sơ mi")) {
+                window.location.href = "../danhmuc/somi/somi.html"; // Chuyển hướng đến trang áo sơ mi
+              } else {
+                alert("Không tìm thấy sản phẩm phù hợp"); // Thông báo nếu không tìm thấy sản phẩm
+              }
+            });
+        </script>
       </header>
 
       <h2>Chọn Thẻ Thanh Toán</h2>
