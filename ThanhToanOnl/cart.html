@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh Toán</title>
+    <!-- Link Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="../Home/Home.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+      }
+      .payment-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .payment-form {
+        border: 2px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #fff;
+        width: 50%;
+        max-width: 600px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .payment-form h2 {
+        margin-bottom: 20px;
+        background-color: #007bff;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      .payment-form label {
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      .payment-button {
+        margin-top: 20px;
+        width: 100%;
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      #new-card-container {
+        margin-top: 20px;
+      }
+      .btn-primary {
+        background-color: #28a745;
+        border-color: #28a745;
+      }
+      .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="payment-container">
+      <div class="payment-form">
+        <h2>Chọn Thẻ Thanh Toán</h2>
+        <form id="payment-form">
+          <div id="card-select-container" class="form-group"></div>
+          <button type="button" id="add-card-button" class="btn btn-secondary">
+            Thêm thẻ mới
+          </button>
+          <div id="new-card-container" style="display: none">
+            <div class="form-group">
+              <label for="card-name">Tên chủ thẻ:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="card-name"
+                placeholder="Họ tên chủ thẻ"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="card-number">Số thẻ:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="card-number"
+                placeholder="1111 2222 3333 4444"
+                maxlength="19"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="expiry-date">Ngày hết hạn (MM/YY):</label>
+              <input
+                type="text"
+                class="form-control"
+                id="expiry-date"
+                placeholder="MM/YY"
+                maxlength="5"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="cvv">Mã bảo mật (CVV):</label>
+              <input
+                type="text"
+                class="form-control"
+                id="cvv"
+                placeholder="123"
+                maxlength="3"
+                required
+              />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary payment-button">
+            Thanh Toán
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="cart.js"></script>
+    <script>
+      document
+        .getElementById("add-card-button")
+        .addEventListener("click", function () {
+          document.getElementById("new-card-container").style.display = "block";
+        });
+    </script>
+  </body>
+</html>

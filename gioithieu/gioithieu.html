@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../Home/Home.css" />
+  </head>
+  <body>
+    <script src="gioithieu.js"></script>
+    <script>
+      // Xử lý sự kiện khi người dùng submit form
+      document
+        .getElementById("searchForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Ngừng hành động mặc định của form
+
+          // Lấy giá trị từ input tìm kiếm
+          var searchQuery = document
+            .getElementById("searchInput")
+            .value.toLowerCase()
+            .trim();
+
+          // Kiểm tra giá trị nhập vào và chuyển hướng tới trang tương ứng
+          if (searchQuery.includes("áo phông")) {
+            window.location.href = "../danhmuc/phong/phong.html"; // Chuyển hướng đến trang áo phông
+          } else if (searchQuery.includes("áo polo")) {
+            window.location.href = "../danhmuc/polo/polo.html"; // Chuyển hướng đến trang áo polo
+          } else if (searchQuery.includes("quần áo bộ")) {
+            window.location.href = "../danhmuc/quanaobo/quanaobo.html"; // Chuyển hướng đến trang quần áo bộ
+          } else if (searchQuery.includes("áo sơ mi")) {
+            window.location.href = "../danhmuc/somi/somi.html"; // Chuyển hướng đến trang áo sơ mi
+          } else {
+            alert("Không tìm thấy sản phẩm phù hợp"); // Thông báo nếu không tìm thấy sản phẩm
+          }
+        });
+    </script>
+  </body>
+</html>
