@@ -108,7 +108,11 @@
   .checkout-button:hover {
     background: #555;
   }
-  
+  .checkout-button a{
+    text-decoration: none; 
+    color: white;
+    
+  }
   table {
     width: 100%;
     border-collapse: collapse;
@@ -139,10 +143,7 @@
     font-weight: bold;
     margin-bottom: 5px;
 }
-.checkout-button a{
-  text-decoration: none; 
-  
-}
+
 
 .checkout-form select,
 .checkout-form input {

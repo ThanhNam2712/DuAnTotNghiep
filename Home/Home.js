@@ -113,3 +113,30 @@ function decreaseQuantity() {
     quantityInput.value = parseInt(quantityInput.value) - 1;
   }
 }
+
+document.getElementById("loginBtn").addEventListener("click", function (event) {
+  event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ a
+  document.getElementById("loginPopup").style.display = "flex";
+});
+
+document.querySelector(".close").addEventListener("click", function () {
+  document.getElementById("loginPopup").style.display = "none";
+});
+
+window.addEventListener("click", function (event) {
+  if (event.target == document.getElementById("loginPopup")) {
+    document.getElementById("loginPopup").style.display = "none";
+  }
+});
+
+document
+  .getElementById("showRegisterForm")
+  .addEventListener("click", function () {
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("registerForm").style.display = "block";
+  });
+
+document.getElementById("showLoginForm").addEventListener("click", function () {
+  document.getElementById("registerForm").style.display = "none";
+  document.getElementById("loginForm").style.display = "block";
+});
