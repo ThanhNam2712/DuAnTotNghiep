@@ -1,3 +1,25 @@
+// Lắng nghe sự kiện click của nút "Lọc theo giá"
+document.getElementById("filterByPrice").addEventListener("click", () => {
+  const minPrice = parseInt(document.getElementById("minPrice").value) || 0;
+  const maxPrice =
+    parseInt(document.getElementById("maxPrice").value) || Infinity;
+
+  // Lấy danh sách các sản phẩm từ giao diện
+  const products = document.querySelectorAll(".product-card");
+
+  products.forEach((product) => {
+    // Lấy giá sản phẩm từ phần tử HTML
+    const priceText = product.querySelector(".price").textContent;
+    const productPrice = parseInt(priceText.replace(/\D/g, ""));
+
+    // Hiển thị hoặc ẩn sản phẩm dựa trên giá tiền
+    if (productPrice >= minPrice && productPrice <= maxPrice) {
+      product.style.display = "block"; // Hiển thị sản phẩm
+    } else {
+      product.style.display = "none"; // Ẩn sản phẩm
+    }
+  });
+});
 let currentSlide = 0; // Biến lưu trữ chỉ số slide hiện tại
 const totalSlides = document.querySelectorAll(".banner-slide").length; // Tổng số slide
 const slideInterval = 3000; // Thời gian chuyển slide (3 giây)
