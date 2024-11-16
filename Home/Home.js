@@ -140,11 +140,11 @@ document.getElementById("showLoginForm").addEventListener("click", function () {
   document.getElementById("registerForm").style.display = "none";
   document.getElementById("loginForm").style.display = "block";
 });
-// Lắng nghe sự kiện click của nút "Lọc theo giá"
 document.getElementById("filterByPrice").addEventListener("click", () => {
   const minPrice = parseInt(document.getElementById("minPrice").value) || 0;
   const maxPrice =
     parseInt(document.getElementById("maxPrice").value) || Infinity;
+  const searchName = document.getElementById("searchName").value.toLowerCase();
 
   // Lấy danh sách các sản phẩm từ giao diện
   const products = document.querySelectorAll(".product-card");
@@ -154,11 +154,20 @@ document.getElementById("filterByPrice").addEventListener("click", () => {
     const priceText = product.querySelector(".price").textContent;
     const productPrice = parseInt(priceText.replace(/\D/g, ""));
 
-    // Hiển thị hoặc ẩn sản phẩm dựa trên giá tiền
-    if (productPrice >= minPrice && productPrice <= maxPrice) {
-      product.style.display = "block"; // Hiển thị sản phẩm
+    // Lấy tên sản phẩm từ phần tử HTML
+    const productName = product
+      .querySelector(".product-name")
+      .textContent.toLowerCase();
+
+    // Kiểm tra điều kiện lọc
+    const isPriceInRange = productPrice >= minPrice && productPrice <= maxPrice;
+    const isNameMatched = productName.includes(searchName);
+
+    // Hiển thị hoặc ẩn sản phẩm dựa trên giá tiền và từ khóa tìm kiếm
+    if (isPriceInRange && isNameMatched) {
+      product.style.display = "block";
     } else {
-      product.style.display = "none"; // Ẩn sản phẩm
+      product.style.display = "none";
     }
   });
 });
